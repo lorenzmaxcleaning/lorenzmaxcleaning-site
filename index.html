@@ -159,64 +159,61 @@
           </ul>
         </div>
 
-        <form action="https://formsubmit.co/lorenzmaxcleaning@gmail.com" method="POST">
+       <form action="https://formspree.io/f/mldqljbz" method="POST">
 
-    <!-- Redirect after submit -->
-    <input type="hidden" name="_next" value="https://lorenzmaxcleaning.github.io/lorenzmaxcleaning-site/success.html">
+    <!-- Redirect después de enviar -->
+    <input type="hidden" name="_redirect" value="https://lorenzmaxcleaning.github.io/lorenzmaxcleaning-site/success.html">
 
-    <!-- Disable captcha -->
+    <!-- Opcional: desactivar captcha -->
     <input type="hidden" name="_captcha" value="false">
-              <div class="mb-3">
-                <label class="form-label">
-                  Full Name / Nombre completo <span class="required-star">*</span>
-                </label>
-                <input type="text" name="name" class="form-control" required />
-              </div>
 
-              <div class="mb-3">
-                <label class="form-label">
-                  Email <span class="required-star">*</span>
-                </label>
-                <input type="email" name="email" class="form-control" required />
-              </div>
+    <div class="mb-3">
+        <label class="form-label">
+            Full Name / Nombre completo <span class="required-star">*</span>
+        </label>
+        <input type="text" name="name" class="form-control" required />
+    </div>
 
-              <div class="mb-3">
-                <label class="form-label">
-                  Phone / Teléfono <span class="required-star">*</span>
-                </label>
-                <input type="text" name="phone" class="form-control" required />
-              </div>
+    <div class="mb-3">
+        <label class="form-label">
+            Email <span class="required-star">*</span>
+        </label>
+        <input type="email" name="email" class="form-control" required />
+    </div>
 
-              <div class="mb-3">
-                <label class="form-label">
-                  Service address (City / ZIP) / Dirección del servicio (ciudad / código postal)
-                </label>
-                <input type="text" name="address" class="form-control" />
-              </div>
+    <div class="mb-3">
+        <label class="form-label">
+            Phone / Teléfono <span class="required-star">*</span>
+        </label>
+        <input type="text" name="phone" class="form-control" required />
+    </div>
 
-              <div class="mb-3">
-                <label class="form-label">
-                  Service Needed / Servicio requerido <span class="required-star">*</span>
-                </label>
-                <select name="service" class="form-select" required>
-                  <option value="">Select an option / Selecciona una opción</option>
-                  <option>Deep Cleaning</option>
-                  <option>Regular Cleaning</option>
-                  <option>Move-In / Move-Out Cleaning</option>
-                  <option>Post-construction Cleaning</option>
-                  <option>Carpet Cleaning</option>
-                  <option>Commercial Cleaning</option>
-                  <option>Other</option>
-                </select>
-              </div>
+    <div class="mb-3">
+        <label class="form-label">
+            Service address (City / ZIP) / Dirección del servicio (ciudad / código postal)
+        </label>
+        <input type="text" name="address" class="form-control" />
+    </div>
 
-              <div class="mb-3">
-                <label class="form-label">
-                  Details / Detalles
-                </label>
-                <textarea name="details" rows="4" class="form-control"
-                  placeholder="Number of bedrooms, bathrooms, pets, special requests / Número de cuartos, baños, mascotas, detalles importantes"></textarea>
-              </div>
+    <div class="mb-3">
+        <label class="form-label">
+            Service Needed / Servicio requerido
+        </label>
+        <select name="service" class="form-control">
+            <option value="" disabled selected>Select an option / Selecciona una opción</option>
+            <option>Deep Cleaning</option>
+            <option>Regular Cleaning</option>
+            <option>Move-In / Move-Out Cleaning</option>
+            <option>Post-construction Cleaning</option>
+            <option>Carpet Cleaning</option>
+            <option>Commercial Cleaning</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Details / Detalles</label>
+        <textarea name="details" rows="4" class="form-control"></textarea>
+    </div>
 
               <button
                 type="submit"
