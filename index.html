@@ -525,9 +525,54 @@
 
       <!-- QUOTE FORM (Netlify form) -->
       <aside class="hero-card" id="quote">
-        <h2>Request your free quote</h2>
-        <p>Tell us about your space and we’ll reach out with a custom estimate.</p>
-        <small>Cuéntanos sobre tu espacio y te enviaremos una cotización personalizada.</small>
+       <h2>Request your free quote</h2>
+<p>Tell us about your space and we’ll reach out with a custom estimate.</p>
+<small>Cuéntanos sobre tu espacio y te enviaremos una cotización personalizada.</small>
+
+<form name="quote-request" method="POST" data-netlify="true" action="/success.html">
+  <input type="hidden" name="form-name" value="quote-request">
+
+  <div style="margin-bottom:1rem;">
+    <label>Full Name / Nombre completo</label>
+    <input type="text" name="name" required />
+  </div>
+
+  <div style="margin-bottom:1rem;">
+    <label>Email</label>
+    <input type="email" name="email" required />
+  </div>
+
+  <div style="margin-bottom:1rem;">
+    <label>Phone / Teléfono</label>
+    <input type="text" name="phone" required />
+  </div>
+
+  <div style="margin-bottom:1rem;">
+    <label>Service Needed / Servicio requerido</label>
+    <select name="service" required>
+      <option>Deep Cleaning</option>
+      <option>Regular Cleaning</option>
+      <option>Move-In / Move-Out</option>
+      <option>Carpet Cleaning</option>
+      <option>Commercial Cleaning</option>
+    </select>
+  </div>
+
+  <div style="margin-bottom:1rem;">
+    <label>Details / Detalles</label>
+    <textarea name="details" rows="4"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary" style="width:100%;">
+    Submit Quote Request / Enviar solicitud
+  </button>
+</form>
+
+<p style="margin-top:0.5rem; font-size:0.9rem; color:#666;">
+  By submitting this form you agree to be contacted by phone, text, or email with your quote. /
+  Al enviar este formulario aceptas que te contactemos por teléfono, texto o correo con tu cotización.
+</p>
+
 
       </aside>
     </div>
