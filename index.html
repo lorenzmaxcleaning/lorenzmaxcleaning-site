@@ -2,763 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Lorenz Max Cleaning Service – We Clean and Protect</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Lorenz Max Cleaning Service offers residential, commercial, carpet, deep and post-construction cleaning in Lancaster County, PA. We clean and protect your space. / Servicio de limpieza residencial y comercial en el condado de Lancaster, PA." />
-  <style>
-    :root {
-      --primary: #0050a4;
-      --secondary: #ffd400;
-      --accent: #00a859;
-      --dark: #06213b;
-      --light: #f5f7fb;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    body {
-      background: #ffffff;
-      color: var(--dark);
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    }
-
-    .nav-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0.6rem 1.2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-
-    .logo-area {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-    }
-
-    .logo-img {
-      height: 60px;
-      width: auto;
-    }
-
-    .logo-text-main {
-      font-weight: 700;
-      font-size: 1rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--primary);
-    }
-
-    .logo-text-sub {
-      font-size: 0.8rem;
-      color: #444;
-    }
-
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .nav-phone {
-      font-weight: 600;
-      font-size: 0.9rem;
-      color: var(--dark);
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.6rem 1.1rem;
-      border-radius: 999px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      border: none;
-      cursor: pointer;
-      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease, color 0.12s ease;
-      white-space: nowrap;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--primary), #002b68);
-      color: #fff;
-      box-shadow: 0 8px 18px rgba(0, 80, 164, 0.35);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 10px 22px rgba(0, 80, 164, 0.4);
-    }
-
-    .btn-outline {
-      background: #ffffff;
-      color: var(--primary);
-      border: 1px solid rgba(0, 80, 164, 0.25);
-    }
-
-    .btn-outline:hover {
-      background: rgba(0, 80, 164, 0.05);
-    }
-
-    .hero {
-      background: radial-gradient(circle at top left, rgba(255, 212, 0, 0.25), transparent 55%),
-                  radial-gradient(circle at bottom right, rgba(0, 80, 164, 0.18), transparent 55%);
-      padding: 2.5rem 1.2rem 2.8rem;
-    }
-
-    .hero-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-      gap: 2.5rem;
-      align-items: center;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.25rem 0.75rem;
-      border-radius: 999px;
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      background: rgba(0, 80, 164, 0.08);
-      color: var(--dark);
-    }
-
-    .hero h1 {
-      margin-top: 0.8rem;
-      font-size: 2.3rem;
-      line-height: 1.1;
-      letter-spacing: -0.03em;
-      color: var(--dark);
-    }
-
-    .hero h1 span {
-      color: var(--primary);
-    }
-
-    .hero-subtitle {
-      margin-top: 0.9rem;
-      font-size: 1rem;
-      color: #334;
-      max-width: 32rem;
-    }
-
-    .hero-subtitle-es {
-      font-size: 0.95rem;
-      color: #334;
-      margin-top: 0.3rem;
-      max-width: 32rem;
-    }
-
-    .hero-highlight {
-      margin-top: 0.7rem;
-      font-size: 0.9rem;
-      color: #222;
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-
-    .hero-highlight strong {
-      color: var(--accent);
-    }
-
-    .hero-actions {
-      margin-top: 1.3rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.7rem;
-    }
-
-    .hero-actions .btn {
-      font-size: 0.9rem;
-    }
-
-    .hero-footnote {
-      margin-top: 0.7rem;
-      font-size: 0.8rem;
-      color: #555;
-    }
-
-    .hero-card {
-      background: rgba(255, 255, 255, 0.96);
-      border-radius: 1.2rem;
-      padding: 1.4rem 1.4rem 1.6rem;
-      box-shadow: 0 16px 40px rgba(6, 33, 59, 0.16);
-      border: 1px solid rgba(0, 0, 0, 0.04);
-    }
-
-    .hero-card h2 {
-      font-size: 1.1rem;
-      margin-bottom: 0.4rem;
-      color: var(--dark);
-    }
-
-    .hero-card h2 + p {
-      font-size: 0.85rem;
-      color: #555;
-      margin-bottom: 0.4rem;
-    }
-
-    .hero-card small {
-      font-size: 0.75rem;
-      color: #666;
-      display: block;
-      margin-bottom: 0.6rem;
-    }
-
-    .input-row {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.6rem;
-    }
-
-    label {
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: #333;
-      display: block;
-      margin-bottom: 0.2rem;
-    }
-
-    input, textarea, select {
-      width: 100%;
-      padding: 0.55rem 0.6rem;
-      border-radius: 0.55rem;
-      border: 1px solid rgba(0, 0, 0, 0.12);
-      font-size: 0.85rem;
-    }
-
-    textarea {
-      min-height: 80px;
-      resize: vertical;
-    }
-
-    .section {
-      padding: 2.4rem 1.2rem;
-    }
-
-    .section-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .section-title {
-      font-size: 1.6rem;
-      margin-bottom: 0.4rem;
-      color: var(--dark);
-    }
-
-    .section-title-es {
-      font-size: 1.2rem;
-      color: #333;
-      margin-bottom: 0.3rem;
-    }
-
-    .section-subtitle {
-      font-size: 0.9rem;
-      color: #555;
-      margin-bottom: 1.4rem;
-    }
-
-    .section-subtitle-es {
-      font-size: 0.88rem;
-      color: #555;
-      margin-top: -1rem;
-      margin-bottom: 1.4rem;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-    }
-
-    .service-card {
-      background: #ffffff;
-      border-radius: 0.9rem;
-      padding: 1rem;
-      border: 1px solid rgba(0, 0, 0, 0.06);
-      box-shadow: 0 10px 25px rgba(6, 33, 59, 0.08);
-    }
-
-    .service-card h3 {
-      font-size: 1rem;
-      margin-bottom: 0.1rem;
-      color: var(--primary);
-    }
-
-    .service-card h4 {
-      font-size: 0.85rem;
-      color: #222;
-      margin-bottom: 0.3rem;
-      font-weight: 600;
-    }
-
-    .service-card p {
-      font-size: 0.85rem;
-      color: #555;
-    }
-
-    .pill {
-      margin-top: 0.6rem;
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--accent);
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
-      gap: 2rem;
-    }
-
-    .contact-card {
-      background: #ffffff;
-      border-radius: 1rem;
-      padding: 1.3rem;
-      border: 1px solid rgba(0, 0, 0, 0.06);
-      box-shadow: 0 12px 30px rgba(6, 33, 59, 0.12);
-    }
-
-    .contact-list {
-      list-style: none;
-      font-size: 0.9rem;
-      color: #444;
-    }
-
-    .contact-list li + li {
-      margin-top: 0.35rem;
-    }
-
-    .contact-actions {
-      margin-top: 0.9rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-    }
-
-    /* Before & After section */
-    .before-after-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-    }
-
-    .ba-card {
-      background: #ffffff;
-      border-radius: 0.9rem;
-      border: 1px solid rgba(0, 0, 0, 0.06);
-      box-shadow: 0 10px 25px rgba(6, 33, 59, 0.08);
-      overflow: hidden;
-      font-size: 0.85rem;
-      color: #444;
-    }
-
-    .ba-images {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0;
-    }
-
-    .ba-images figure {
-      margin: 0;
-      position: relative;
-    }
-
-    .ba-images img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .ba-label {
-      position: absolute;
-      bottom: 6px;
-      left: 6px;
-      background: rgba(0, 0, 0, 0.6);
-      color: #fff;
-      font-size: 0.75rem;
-      padding: 0.15rem 0.4rem;
-      border-radius: 999px;
-    }
-
-    .ba-caption {
-      padding: 0.6rem 0.8rem 0.8rem;
-    }
-
-    footer {
-      border-top: 1px solid rgba(0, 0, 0, 0.06);
-      padding: 1rem 1.2rem 1.8rem;
-      font-size: 0.8rem;
-      color: #666;
-    }
-
-    .footer-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 0.6rem;
-      align-items: center;
-    }
-
-    @media (max-width: 900px) {
-      .hero-inner {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .services-grid,
-      .before-after-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .contact-grid {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .hero {
-        padding-top: 1.8rem;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .hero h1 {
-        font-size: 1.9rem;
-      }
-
-      .services-grid,
-      .before-after-grid {
-        grid-template-columns: minmax(0, 1fr);
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lorenz Max Cleaning</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="nav-container">
-      <div class="logo-area">
-        <img src="lorenz-max-logo.png" alt="Lorenz Max Cleaning Service logo" class="logo-img" />
-        <div>
-          <div class="logo-text-main">Lorenz Max Cleaning Service</div>
-          <div class="logo-text-sub">We clean and protect • Limpiamos y protegemos</div>
-        </div>
-      </div>
-      <div class="nav-actions">
-        <div class="nav-phone">Call / Llámanos: <a href="tel:+12233614467">(223) 361-4467</a></div>
-        <a href="#quote" class="btn btn-outline">Request a quote / Cotización</a>
-        <a href="https://wa.me/12233614467" target="_blank" class="btn btn-primary">WhatsApp</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- HERO -->
+  <!-- HERO / HEADER -->
   <section class="hero">
-    <div class="hero-inner">
-      <div>
-        <div class="badge">
-          🧽 Trusted local cleaning • Limpieza profesional local
-        </div>
-        <h1>
-          Professional <span>Residential & Commercial Cleaning</span><br />
-          in Lancaster County, PA
-        </h1>
-        <p class="hero-subtitle">
-          Reliable, detailed and family-friendly cleaning for homes, offices, hotels and Airbnbs.
-        </p>
-        <p class="hero-subtitle-es">
-          Limpieza profesional, detallada y amigable con tu familia para casas, oficinas, hoteles y Airbnbs.
-        </p>
-        <p class="hero-highlight">
-          <strong>Serving / Áreas:</strong> Willow Street • Lancaster • Millersville • Rohrerstown • Manheim Township & more.
-        </p>
-        <div class="hero-actions">
-          <a href="tel:+12233614467" class="btn btn-primary">📞 Call your cleaning service now / Llamar ahora</a>
-          <a href="https://wa.me/12233614467" target="_blank" class="btn btn-outline">💬 WhatsApp</a>
-          <a href="#quote" class="btn btn-outline">✨ Get a free quote / Cotización gratis</a>
-        </div>
-        <p class="hero-footnote">
-          Fully insured • Detailed deep cleans • Move-in / move-out • Post-construction • Carpet care.<br />
-          Totalmente asegurados • Limpiezas profundas • Mudanzas • Posconstrucción • Cuidado de alfombras.
-        </p>
-      </div>
-
-      <!-- QUOTE FORM (Netlify form) -->
-      <aside class="hero-card" id="quote">
-       <h2>Request your free quote</h2>
-<p>Tell us about your space and we’ll reach out with a custom estimate.</p>
-<small>Cuéntanos sobre tu espacio y te enviaremos una cotización personalizada.</small>
-
-<form name="quote-request" method="POST" data-netlify="true" action="/success.html">
-  <input type="hidden" name="form-name" value="quote-request" />
-
-  <div style="margin-bottom:1rem;">
-    <label>Full Name / Nombre completo</label>
-    <input type="text" name="name" required />
-  </div>
-
-  <div style="margin-bottom:1rem;">
-    <label>Email</label>
-    <input type="email" name="email" required />
-  </div>
-
-  <div style="margin-bottom:1rem;">
-    <label>Phone / Teléfono</label>
-    <input type="text" name="phone" required />
-  </div>
-
-  <div style="margin-bottom:1rem;">
-    <label>Service Needed / Servicio requerido</label>
-    <select name="service" required>
-      <option>Deep Cleaning</option>
-      <option>Regular Cleaning</option>
-      <option>Move-In / Move-Out</option>
-      <option>Carpet Cleaning</option>
-      <option>Commercial Cleaning</option>
-    </select>
-  </div>
-
-  <div style="margin-bottom:1rem;">
-    <label>Details / Detalles</label>
-    <textarea name="details" rows="4"></textarea>
-  </div>
-
-  <button type="submit" class="btn btn-primary" style="margin-top:0.9rem; width:100%;">
-    Submit Quote Request / Enviar solicitud de cotizacion
-  </button>
-</form>
-
-<p style="margin-top:0.5rem; font-size:0.9rem; color:#666;">
-  By submitting this form you agree to be contacted by phone, text, or email with your quote. /
-  Al enviar este formulario aceptas que te contactemos por teléfono, texto o correo con tu cotización.
-</p>
-
-
-      </aside>
+    <div class="hero-content">
+      <img src="lorenz-max-logo.png" alt="Lorenz Max Cleaning" style="width:180px; margin-bottom:1rem;">
+      <h1>Professional Cleaning Services</h1>
+      <p>Fully insured • Deep cleans • Move-In / Move-Out • Post-construction • Carpet Care</p>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section class="section" id="services">
-    <div class="section-inner">
-      <h2 class="section-title">Our cleaning services</h2>
-      <h3 class="section-title-es">Nuestros servicios de limpieza</h3>
-      <p class="section-subtitle">
-        From one-time deep cleans to recurring maintenance, Lorenz Max Cleaning Service keeps every space spotless and protected.
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Deep Cleaning</li>
+      <li>Regular Cleaning</li>
+      <li>Move-In / Move-Out Cleaning</li>
+      <li>Post-construction Cleaning</li>
+      <li>Carpet Cleaning</li>
+      <li>Commercial Cleaning</li>
+    </ul>
+  </section>
+
+  <!-- QUOTE FORM SECTION -->
+  <section id="quote-section">
+    <div class="hero-card">
+
+      <h2>Request your free quote</h2>
+      <p>Tell us about your space and we’ll reach out with a custom estimate.</p>
+      <small>Cuéntanos sobre tu espacio y te enviaremos una cotización personalizada.</small>
+
+      <!-- NETLIFY FORM -->
+      <form name="quote-request" method="POST" data-netlify="true" action="/success.html">
+        <input type="hidden" name="form-name" value="quote-request">
+
+        <div class="input-row">
+          <label>Full Name / Nombre completo</label>
+          <input type="text" name="name" required>
+        </div>
+
+        <div class="input-row">
+          <label>Email</label>
+          <input type="email" name="email" required>
+        </div>
+
+        <div class="input-row">
+          <label>Phone / Teléfono</label>
+          <input type="text" name="phone" required>
+        </div>
+
+        <div class="input-row">
+          <label>Service Needed / Servicio requerido</label>
+          <select name="service" required>
+            <option>Deep Cleaning</option>
+            <option>Regular Cleaning</option>
+            <option>Move-In / Move-Out</option>
+            <option>Carpet Cleaning</option>
+            <option>Commercial Cleaning</option>
+          </select>
+        </div>
+
+        <div class="input-row">
+          <label>Details / Detalles</label>
+          <textarea name="details" rows="4"></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit" style="width:100%; margin-top:1rem;">
+          Submit Quote Request / Enviar solicitud de cotización
+        </button>
+      </form>
+
+      <p style="margin-top:0.6rem; font-size:0.9rem; color:#666;">
+        By submitting this form you agree to be contacted by phone, text, or email with your quote. <br>
+        Al enviar este formulario aceptas que te contactemos por teléfono, texto o correo.
       </p>
-      <p class="section-subtitle-es">
-        Desde limpiezas profundas puntuales hasta mantenimiento regular, Lorenz Max Cleaning Service mantiene cada espacio limpio y protegido.
-      </p>
 
-      <div class="services-grid">
-        <div class="service-card">
-          <h3>Residential Cleaning</h3>
-          <h4>Limpieza residencial</h4>
-          <p>Regular and deep cleaning for houses, townhomes and apartments: kitchens, bathrooms, bedrooms, living areas and more.</p>
-          <div class="pill">Weekly • Bi-weekly • Monthly / Semanal • Quincenal • Mensual</div>
-        </div>
-
-        <div class="service-card">
-          <h3>Commercial & Office Cleaning</h3>
-          <h4>Limpieza comercial y de oficinas</h4>
-          <p>Cleaning for offices, small businesses, salons, clinics and more, with flexible hours that adapt to your business.</p>
-          <div class="pill">Custom schedules / Horarios flexibles</div>
-        </div>
-
-        <div class="service-card">
-          <h3>Carpet & Floor Care</h3>
-          <h4>Cuidado de alfombras y pisos</h4>
-          <p>Vacuuming, stain treatment and detailed floor care to keep carpets, rugs and hard floors fresh and long-lasting.</p>
-          <div class="pill">Carpet • Tile • Hard floors</div>
-        </div>
-
-        <div class="service-card">
-          <h3>Deep Cleaning</h3>
-          <h4>Limpieza profunda</h4>
-          <p>Top-to-bottom cleaning for kitchens, bathrooms, baseboards, doors, light switches and hard-to-reach areas.</p>
-          <div class="pill">Great for spring & move-in / Ideal para cambios de estación</div>
-        </div>
-
-        <div class="service-card">
-          <h3>Move-In / Move-Out</h3>
-          <h4>Limpieza de mudanza</h4>
-          <p>Detailed cleaning before you hand over the keys or move into your new home so everything feels truly clean.</p>
-          <div class="pill">Landlord & tenant ready / Listo para entregar</div>
-        </div>
-
-        <div class="service-card">
-          <h3>Post-Construction Cleaning</h3>
-          <h4>Limpieza posconstrucción</h4>
-          <p>Dust removal, detailed vacuuming and wipe-down after renovations or construction so your space is ready to use.</p>
-          <div class="pill">Contractor friendly / Ideal para contratistas</div>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- BEFORE & AFTER -->
-  <section class="section" id="before-after" style="background:var(--light);">
-    <div class="section-inner">
-      <h2 class="section-title">Before & After Gallery</h2>
-      <h3 class="section-title-es">Galería de Antes y Después</h3>
-      <p class="section-subtitle">
-        A quick look at the kind of transformation we create for our clients.
-      </p>
-      <p class="section-subtitle-es">
-        Un vistazo rápido a las transformaciones que podemos lograr en tu hogar o negocio.
-      </p>
-
-      <!-- NOTA: Reemplaza las imágenes before1.jpg, after1.jpg, etc. con tus propias fotos -->
-      <div class="before-after-grid">
-        <div class="ba-card">
-          <div class="ba-images">
-            <figure>
-              <img src="before1.jpg" alt="Before cleaning - kitchen" />
-              <span class="ba-label">Before / Antes</span>
-            </figure>
-            <figure>
-              <img src="after1.jpg" alt="After cleaning - kitchen" />
-              <span class="ba-label">After / Después</span>
-            </figure>
-          </div>
-          <div class="ba-caption">
-            Kitchen deep cleaning / Limpieza profunda de cocina.
-          </div>
-        </div>
-
-        <div class="ba-card">
-          <div class="ba-images">
-            <figure>
-              <img src="before2.jpg" alt="Before cleaning - bathroom" />
-              <span class="ba-label">Before / Antes</span>
-            </figure>
-            <figure>
-              <img src="after2.jpg" alt="After cleaning - bathroom" />
-              <span class="ba-label">After / Después</span>
-            </figure>
-          </div>
-          <div class="ba-caption">
-            Bathroom detail cleaning / Detalle en baño.
-          </div>
-        </div>
-
-        <div class="ba-card">
-          <div class="ba-images">
-            <figure>
-              <img src="before3.jpg" alt="Before cleaning - living room" />
-              <span class="ba-label">Before / Antes</span>
-            </figure>
-            <figure>
-              <img src="after3.jpg" alt="After cleaning - living room" />
-              <span class="ba-label">After / Después</span>
-            </figure>
-          </div>
-          <div class="ba-caption">
-            Living room reset / Sala lista para disfrutar.
-          </div>
-        </div>
-      </div>
-
-      <p style="margin-top:1rem; font-size:0.8rem; color:#555;">
-        You can send us your own pictures to update this gallery with your real projects.
-        / Puedes enviarnos tus propias fotos para actualizar esta galería con tus proyectos reales.
-      </p>
-    </div>
-  </section>
-
-  <!-- CONTACT & AREA -->
-  <section class="section">
-    <div class="section-inner contact-grid">
-      <div>
-        <h2 class="section-title">Contact & service area</h2>
-        <h3 class="section-title-es">Contacto y áreas de servicio</h3>
-        <p class="section-subtitle">
-          Based in Willow Street, PA – serving Lancaster County and nearby areas.
-        </p>
-        <p class="section-subtitle-es">
-          Con base en Willow Street, PA – servimos al condado de Lancaster y áreas cercanas.
-        </p>
-        <ul class="contact-list">
-          <li><strong>Phone / Teléfono:</strong> <a href="tel:+12233614467">(223) 361-4467</a></li>
-          <li><strong>Email / Correo:</strong> <a href="mailto:lorenzmaxcleaning@gmail.com">lorenzmaxcleaning@gmail.com</a></li>
-          <li><strong>WhatsApp:</strong> <a href="https://wa.me/12233614467" target="_blank">Message us / Escríbenos</a></li>
-          <li><strong>Service area / Área de servicio:</strong> Willow Street, Lancaster, Millersville, Rohrerstown, Manheim Township y alrededores.</li>
-          <li><strong>Payments / Pagos:</strong> Cheque, Zelle y facturas comerciales disponibles.</li>
-        </ul>
-        <div class="contact-actions">
-          <a href="tel:+12233614467" class="btn btn-primary">📞 Call now / Llamar ahora</a>
-          <a href="https://wa.me/12233614467" target="_blank" class="btn btn-outline">💬 WhatsApp</a>
-          <a href="#quote" class="btn btn-outline">Get a free quote / Cotización gratis</a>
-        </div>
-      </div>
-
-      <div class="contact-card">
-        <h3 style="margin-bottom:0.4rem;">Why choose Lorenz Max Cleaning Service?</h3>
-        <h4 style="margin-bottom:0.4rem;">¿Por qué elegir Lorenz Max Cleaning Service?</h4>
-        <p style="font-size:0.85rem; color:#555; margin-bottom:0.6rem;">
-          We know your home and business are important. We clean with respect, attention to detail, and products that protect your surfaces and your family.
-          <br />
-          Sabemos que tu hogar y tu negocio son importantes. Limpiamos con respeto, atención al detalle y productos que protegen tus superficies y tu familia.
-        </p>
-        <ul class="contact-list">
-          <li>✔ Detailed checklists for each visit. / Listas de verificación detalladas en cada visita.</li>
-          <li>✔ Flexible scheduling for busy families and business owners. / Horarios flexibles para familias y negocios.</li>
-          <li>✔ Move-in / move-out and post-construction specialists. / Especialistas en mudanzas y posconstrucción.</li>
-          <li>✔ Hotel & Airbnb housekeeping support available. / Apoyo para hoteles y Airbnbs disponible.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
+  <!-- FOOTER -->
   <footer>
-    <div class="footer-inner">
-      <div>© <span id="year"></span> Lorenz Max Cleaning Service. All rights reserved.</div>
-      <div>We clean and protect – Limpiamos y protegemos.</div>
-    </div>
+    <p>© 2025 Lorenz Max Cleaning LLC</p>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
