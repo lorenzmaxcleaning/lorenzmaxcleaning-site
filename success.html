@@ -4,59 +4,93 @@
   <meta charset="UTF-8" />
   <title>Thank you | Lorenz Max Cleaning</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Simple styles to match your main page -->
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f2f5fb;
+      color: #16365f;
       display: flex;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
     }
+
     .card {
       background: #ffffff;
-      max-width: 480px;
-      width: 100%;
-      padding: 2rem 2.5rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      max-width: 600px;
+      width: 90%;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
       border-radius: 12px;
       text-align: center;
     }
+
     h1 {
       margin-top: 0;
-      color: #003366;
+      margin-bottom: 0.75rem;
+      font-size: 2rem;
     }
+
     p {
-      color: #555;
-      line-height: 1.6;
+      margin: 0.4rem 0;
+      line-height: 1.4;
     }
-    .btn-home {
+
+    .brand {
+      font-weight: 600;
+    }
+
+    .btn {
+      margin-top: 1.8rem;
       display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.7rem 1.4rem;
-      background: #007bff;
-      color: #fff;
-      text-decoration: none;
+      padding: 0.75rem 1.6rem;
       border-radius: 999px;
-      font-weight: bold;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      background-color: #007bff;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    small {
+      display: block;
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <div class="card">
+  <main class="card">
     <h1>Thank you!</h1>
+    <p>We've received your quote request.</p>
     <p>
-      We’ve received your quote request.  
-      A member of the Lorenz Max Cleaning team will contact you soon.
+      A member of the <span class="brand">Lorenz Max Cleaning</span> team will
+      contact you soon with a personalized estimate.
     </p>
-    <p>
+
+    <p style="margin-top:1.2rem;">
       ¡Gracias! Hemos recibido tu solicitud de cotización.  
-      Muy pronto alguien de Lorenz Max Cleaning se pondrá en contacto contigo.
+      Muy pronto alguien de <span class="brand">Lorenz Max Cleaning</span>
+      se pondrá en contacto contigo.
     </p>
-    <a class="btn-home" href="/">Back to home / Volver al inicio</a>
-  </div>
+
+    <a class="btn" href="/">Back to home / Volver al inicio</a>
+
+    <small>
+      If you need urgent assistance, you can call or text us at
+      (223) 361-4467.
+    </small>
+  </main>
 </body>
 </html>
-
