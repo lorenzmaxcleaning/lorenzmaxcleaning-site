@@ -1,42 +1,78 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Sobre Nosotros | Lorenz Max Cleaning LLC</title>
+  <title>About Us | Lorenz Max Cleaning LLC</title>
   <meta name="description"
-        content="Conoce a Lorenz Max Cleaning LLC, empresa profesional de limpieza en el Condado de Lancaster, PA. Limpieza residencial, comercial, profunda y de mudanzas." />
+        content="Learn more about Lorenz Max Cleaning LLC, a fully-insured, family-owned cleaning company serving Lancaster County, PA." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="canonical" href="https://lorenzmaxcleaning.com/about.html" />
 
+  <link rel="canonical" href="https://lorenzmaxcleaning.com/about.html" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #f2f6fa;
+    }
+    .page-hero {
+      background: linear-gradient(135deg, #007bff, #00b4d8);
+      color: #fff;
+      padding: 70px 0 50px;
+    }
+    .page-hero h1 {
+      font-weight: 700;
+    }
+    footer {
+      background: #0d1b2a;
+      color: #fff;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #25d366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      text-decoration: none;
+      color: #fff;
+      font-size: 28px;
+    }
+  </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+
+<!-- Navbar (mismo en todas las páginas) -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="lorenz-max-logo.png"
-           alt="Lorenz Max Cleaning logo"
-           height="40"
-           class="me-2">
+      <img src="lorenz-max-logo.png" alt="Lorenz Max Cleaning logo" height="40" class="me-2">
       <span class="fw-bold">Lorenz Max Cleaning</span>
     </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mainNav">
-     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us / Sobre nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services / Servicios</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact / Contacto</a></li>
-
-        <!-- Botón WhatsApp en el menú -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="before-after.html">Before &amp; After</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         <li class="nav-item ms-lg-3">
           <a class="btn btn-outline-success"
              href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote"
-             target="_blank">
-            WhatsApp
-          </a>
+             target="_blank">WhatsApp</a>
         </li>
-
-        <!-- Botón de llamada -->
         <li class="nav-item ms-lg-2">
           <a class="btn btn-primary" href="tel:+12233614467">Call now</a>
         </li>
@@ -45,58 +81,78 @@
   </div>
 </nav>
 
-<main class="py-5">
+<section class="page-hero">
   <div class="container">
-    <h1 class="mb-3">Sobre Lorenz Max Cleaning LLC</h1>
-    <p>
-      Lorenz Max Cleaning LLC es una compañía local de limpieza profesional con base en el
-      <strong>Condado de Lancaster, Pennsylvania</strong>. Trabajamos tanto con hogares como con negocios,
-      ofreciendo servicios confiables, detallados y personalizados.
+    <h1>About Lorenz Max Cleaning LLC</h1>
+    <p class="lead mb-0">
+      Professional, detail-oriented cleaning services for homes and businesses in Lancaster County, PA.
     </p>
-
-    <h2 class="h4 mt-4">Nuestra misión</h2>
-    <p>
-      Nuestra misión es brindar servicios de limpieza de alta calidad con honestidad, respeto y compromiso,
-      ayudando a nuestros clientes a disfrutar de espacios limpios, saludables y organizados sin estrés.
-    </p>
-
-    <h2 class="h4 mt-4">Áreas que atendemos</h2>
-    <p>Servimos todo el Condado de Lancaster, incluyendo:</p>
-    <ul>
-      <li>Willow Street</li>
-      <li>Lancaster City</li>
-      <li>Millersville</li>
-      <li>Strasburg</li>
-      <li>Mountville</li>
-      <li>Columbia</li>
-      <li>Lititz</li>
-      <li>Manheim</li>
-      <li>East Petersburg</li>
-      <li>Y áreas cercanas del condado de Lancaster</li>
-    </ul>
-
-    <h2 class="h4 mt-4">Lo que nos distingue</h2>
-    <ul>
-      <li>Servicio cercano y comunicación directa.</li>
-      <li>Respeto absoluto por tu hogar, tu tiempo y tu privacidad.</li>
-      <li>Horarios flexibles y opciones de limpieza regular o por proyecto.</li>
-      <li>Experiencia en limpieza residencial, comercial y hotelera.</li>
-    </ul>
-
-    <p class="mt-4">
-      Si buscas una empresa confiable, profesional y que hable tu idioma,
-      <strong>Lorenz Max Cleaning LLC</strong> es tu mejor opción en el Condado de Lancaster.
-    </p>
-
-    <a href="contact.html" class="btn btn-primary mt-3">Solicitar una cotización</a>
   </div>
-</main>
+</section>
 
-<footer class="bg-dark text-light text-center py-3">
+<section class="py-5">
   <div class="container">
-    Lorenz Max Cleaning LLC · Lancaster County, PA · Tel: <a class="link-light" href="tel:+12233614467">(223) 361-4467</a>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="bg-white rounded-3 shadow-sm p-4">
+          <h2 class="h4">Who We Are</h2>
+          <p>
+            Lorenz Max Cleaning LLC is a fully-insured, family-owned cleaning company based in
+            Lancaster County, Pennsylvania. We specialize in residential and commercial cleaning,
+            deep cleans, move-in/move-out services, carpet care, and more.
+          </p>
+          <p>
+            Our goal is simple: deliver reliable, high-quality cleaning so you can enjoy a fresh,
+            organized and healthy space without the stress.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="bg-white rounded-3 shadow-sm p-4">
+          <h2 class="h4">Why Clients Choose Us</h2>
+          <ul class="mb-0">
+            <li>Fully insured and professional.</li>
+            <li>Detail-oriented, consistent and dependable.</li>
+            <li>Flexible scheduling that fits your routine.</li>
+            <li>Clear communication in English and Spanish.</li>
+            <li>Local, family-owned business in Lancaster County.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-4">
+      <div class="col-lg-12">
+        <div class="bg-white rounded-3 shadow-sm p-4">
+          <h2 class="h4">Service Areas</h2>
+          <p>
+            We proudly serve <strong>Willow Street, Lancaster City, Millersville, Strasburg, Mountville</strong>
+            and many nearby communities across Lancaster County, PA.
+          </p>
+          <p class="mb-0">
+            If you’re not sure whether we can come to your area, contact us and we’ll be happy to confirm.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container text-center">
+    <p class="mb-1">
+      Lorenz Max Cleaning LLC · Lancaster County, PA · Phone:
+      <a href="tel:+12233614467" class="link-light">(223) 361-4467</a>
+    </p>
+    <p class="mb-0">
+      Serving Willow Street, Lancaster City, Millersville, Strasburg, Mountville and nearby areas.
+    </p>
   </div>
 </footer>
+
+<a href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote"
+   class="whatsapp-float" target="_blank">💬</a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
