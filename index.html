@@ -139,7 +139,6 @@
 
           <!-- FORM START -->
           <form id="quote" action="https://formspree.io/f/mldqljbz" method="POST">
-            <input type="hidden" name="_redirect" value="https://lorenzmaxcleaning.com/success.html">
             <div class="mb-3">
               <label class="form-label">Full Name / Nombre completo *</label>
               <input type="text" name="name" class="form-control" required />
@@ -237,6 +236,36 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Script para redirigir a success.html después de enviar el formulario -->
+<script>
+  const quoteForm = document.getElementById('quote');
+
+  if (quoteForm) {
+    quoteForm.addEventListener('submit', async function (e) {
+      e.preventDefault();  // Evita el envío normal
+
+      const form = e.target;
+      const data = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          // 👇 Redirección correcta
+          window.location.href = "success.html";
+        } else {
+          alert("There was a problem sending your request. Please try again.");
+        }
+      } catch (error) {
+        alert("Network error. Please try again.\nError: " + error);
+      }
+    });
+  }
+</script>
 
 </body>
 </html>
