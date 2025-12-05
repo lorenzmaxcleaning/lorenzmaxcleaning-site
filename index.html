@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Lorenz Max Cleaning LLC | Professional Cleaning in Lancaster County, PA</title>
   <meta name="description"
-        content="Professional residential and commercial cleaning services in Lancaster County, PA. Deep cleaning, move-in/move-out, carpet care and more. Serving Willow Street, Lancaster City, Millersville, Strasburg and nearby areas. Free quote." />
+        content="Professional residential and commercial cleaning services in Lancaster County, PA. Deep cleaning, move-in/move-out, carpet care and more. Serving Willow Street, Lancaster City, Millersville, Strasburg, Mountville and nearby areas. Free quote." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Canonical -->
@@ -13,175 +13,40 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
+  <!-- Custom Style -->
   <style>
-    /* --------- BASE --------- */
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background-color: #f5f7fb;
-      color: #212529;
+      background-color: #f2f6fa;
     }
 
-    a {
-      text-decoration: none;
-    }
-
-    /* --------- NAVBAR --------- */
     .navbar {
-      background-color: #ffffff;
+      background: #ffffff;
     }
 
-    .navbar-brand span {
-      font-weight: 700;
-      color: #0d6efd;
-    }
-
-    .nav-link {
-      font-weight: 500;
-      color: #1f2933;
-    }
-
-    .nav-link:hover,
-    .nav-link:focus {
-      color: #0d6efd;
-    }
-
-    .btn-primary {
-      background-color: #0d6efd;
-      border-color: #0d6efd;
-    }
-
-    .btn-primary:hover {
-      background-color: #0b5ed7;
-      border-color: #0b5ed7;
-    }
-
-    .btn-outline-success {
-      color: #198754;
-      border-color: #198754;
-    }
-
-    .btn-outline-success:hover {
-      background-color: #198754;
-      color: #ffffff;
-    }
-
-    /* --------- HERO SECTION --------- */
     .hero {
-      background: linear-gradient(135deg, #0d6efd, #0a58ca);
-      color: #ffffff;
-      padding: 4rem 0 4.5rem;
+      background: linear-gradient(135deg, #007bff, #00b4d8);
+      color: white;
+      padding: 80px 0;
     }
 
-    .hero h1 {
-      font-size: 2.4rem;
-      font-weight: 700;
-      line-height: 1.2;
-    }
-
-    @media (min-width: 992px) {
-      .hero h1 {
-        font-size: 2.8rem;
-      }
-    }
-
-    .hero-sub {
-      font-size: 1.02rem;
-      color: #e2e8ff;
-    }
-
-    .badge-es {
-      display: inline-block;
-      background: rgba(255, 255, 255, 0.18);
-      color: #ffffff;
-      font-size: 0.8rem;
-      padding: 0.3rem 0.75rem;
-      border-radius: 999px;
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-    }
-
-    .hero .btn.btn-light {
-      background-color: #ffffff;
+    .hero .btn-light {
+      background: white;
       border: none;
-      font-weight: 600;
     }
 
-    .hero .btn.btn-light:hover {
-      background-color: #e5efff;
-    }
-
-    .hero .btn.btn-outline-light {
-      border-color: rgba(255, 255, 255, 0.8);
-      color: #ffffff;
-    }
-
-    .hero .btn.btn-outline-light:hover {
-      background-color: #ffffff;
-      color: #0d6efd;
-    }
-
-    /* Card del formulario en el hero */
-    .hero .quote-card {
-      background-color: #ffffff;
-      border-radius: 1rem;
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
-      border: 1px solid rgba(15, 23, 42, 0.05);
-    }
-
-    .hero .quote-card h2 {
-      color: #0f172a;
-      font-weight: 700;
-    }
-
-    .hero .quote-card p {
-      font-size: 0.95rem;
-    }
-
-    /* --------- SERVICES SECTION --------- */
     .section-title {
-      font-weight: 700;
-      color: #0f172a;
+      color: #007bff;
     }
 
-    section.py-5 {
-      background-color: #ffffff;
-    }
-
-    section.py-5 .col-md-4 {
-      background-color: #f9fafb;
-      border-radius: 0.75rem;
-      padding: 1.5rem;
-      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
-    }
-
-    section.py-5 .col-md-4 h3 {
-      color: #0d6efd;
-      font-weight: 600;
-    }
-
-    section.py-5 .col-md-4 p {
-      font-size: 0.95rem;
-      color: #4b5563;
-    }
-
-    /* --------- FOOTER --------- */
     footer {
-      background-color: #111827;
-      color: #e5e7eb;
-      padding: 1.75rem 0;
-      margin-top: 0;
+      background: #0d1b2a;
+      color: white;
+      padding: 20px 0;
+      margin-top: 40px;
     }
 
-    footer a {
-      color: #bfdbfe;
-    }
-
-    footer a:hover {
-      color: #ffffff;
-      text-decoration: underline;
-    }
-
-    /* --------- WhatsApp Floating Button (opcional, sin HTML todavía) --------- */
+    /* WhatsApp Floating Button */
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -194,11 +59,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
       text-decoration: none;
       color: #fff;
       font-size: 28px;
     }
+
   </style>
 </head>
 <body>
@@ -207,31 +73,29 @@
 <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="lorenz-max-logo.png"
-           alt="Lorenz Max Cleaning logo"
-           height="40"
-           class="me-2">
+      <img src="lorenz-max-logo.png" alt="Lorenz Max Cleaning logo" height="40" class="me-2">
       <span class="fw-bold">Lorenz Max Cleaning</span>
     </a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="mainNav">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
         <li class="nav-item"><a class="nav-link" href="about.html">About Us / Sobre nosotros</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services / Servicios</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact / Contacto</a></li>
 
-        <!-- Botón WhatsApp en el menú -->
+        <!-- WhatsApp -->
         <li class="nav-item ms-lg-3">
           <a class="btn btn-outline-success"
              href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote"
-             target="_blank">
-            WhatsApp
-          </a>
+             target="_blank">WhatsApp</a>
         </li>
 
-        <!-- Botón de llamada -->
+        <!-- Call Button -->
         <li class="nav-item ms-lg-2">
           <a class="btn btn-primary" href="tel:+12233614467">Call now</a>
         </li>
@@ -244,124 +108,135 @@
 <section class="hero">
   <div class="container">
     <div class="row align-items-center g-4">
+
       <div class="col-lg-7">
-        <span class="badge-es mb-2">Servicios también en español</span>
-        <h1 class="mb-3">
+        <span class="badge bg-warning text-dark mb-2">Servicios también en español</span>
+
+        <h1 class="fw-bold">
           Professional Cleaning Services in Lancaster County, PA
         </h1>
-        <p class="hero-sub mb-2">
-          Residential &amp; commercial cleaning in <strong>Willow Street, Lancaster City, Millersville, Strasburg, Mountville</strong> and nearby areas.
+
+        <p class="mt-3">
+          Residential & commercial cleaning in Willow Street, Lancaster City, Millersville,
+          Strasburg, Mountville and all nearby areas in Lancaster County, PA.
         </p>
-        <p class="hero-sub">
+
+        <p>
           <strong>Servicios de limpieza profesional en todo el Condado de Lancaster, PA.</strong>
-          Limpieza profunda, limpieza regular, mudanzas, alfombras y más.
+          Limpieza profunda, regular, mudanzas, alfombras y más.
         </p>
-        <div class="mt-3">
-          <a href="#quote" class="btn btn-light text-primary me-2">Request a free quote</a>
-          <a href="https://lorenzmaxcleaning.com/contact.html" class="btn btn-outline-light">Ver información de contacto</a>
-        </div>
+
+        <a href="#quote" class="btn btn-light text-primary mt-3 me-2">Request a free quote</a>
+        <a href="contact.html" class="btn btn-outline-light mt-3">Ver información de contacto</a>
       </div>
+
+      <!-- FORM CONTAINER -->
       <div class="col-lg-5">
-        <div class="quote-card p-4">
-          <h2 class="h4 mb-2 text-center">Request your free quote</h2>
-          <p class="text-muted mb-3 text-center">
-            Tell us about your space and we’ll reach out with a custom estimate.
-          </p>
+        <div class="bg-white text-dark rounded-3 shadow p-4">
 
-          <!-- FORM: Formspree -->
+          <h2 class="h4 text-center fw-bold mb-2">Request your free quote</h2>
+          <p class="text-muted text-center mb-3">Tell us about your space and we'll reach out with a custom estimate.</p>
+
+          <!-- FORM START -->
           <form id="quote" action="https://formspree.io/f/mldqljbz" method="POST">
+
             <div class="mb-3">
-  <label class="form-label">Full Name / Nombre completo *</label>
-  <input type="text" name="name" class="form-control" required />
-</div>
+              <label class="form-label">Full Name / Nombre completo *</label>
+              <input type="text" name="name" class="form-control" required />
+            </div>
 
-<div class="mb-3">
-  <label class="form-label">Email *</label>
-  <input type="email" name="email" class="form-control" required />
-</div>
+            <div class="mb-3">
+              <label class="form-label">Email *</label>
+              <input type="email" name="email" class="form-control" required />
+            </div>
 
-<div class="mb-3">
-  <label class="form-label">Phone / Teléfono *</label>
-  <input type="text" name="phone" class="form-control" required />
-</div>
+            <div class="mb-3">
+              <label class="form-label">Phone / Teléfono *</label>
+              <input type="text" name="phone" class="form-control" required />
+            </div>
 
-<div class="mb-3">
-  <label class="form-label">Service Address (City / ZIP) / Dirección del servicio *</label>
-  <input type="text" name="address" class="form-control" required />
-</div>
+            <div class="mb-3">
+              <label class="form-label">Service Address (City / ZIP) / Dirección del servicio *</label>
+              <input type="text" name="address" class="form-control" required />
+            </div>
 
-<div class="mb-3">
-  <label class="form-label">Service needed / Servicio requerido *</label>
-  <select name="service" class="form-select" required>
-    <option value="">Select an option / Selecciona una opción</option>
-    <option value="Residential cleaning">Residential cleaning / Limpieza residencial</option>
-    <option value="Deep cleaning">Deep cleaning / Limpieza profunda</option>
-    <option value="Move in / Move out">Move-in / Move-out</option>
-    <option value="Commercial cleaning">Commercial cleaning / Limpieza comercial</option>
-    <option value="Carpet care">Carpet care / Cuidado de alfombras</option>
-    <option value="Hotel housekeeping">Hotel housekeeping services</option>
-    <option value="Other">Other / Otro</option>
-  </select>
-</div>
+            <div class="mb-3">
+              <label class="form-label">Service needed / Servicio requerido *</label>
+              <select name="service" class="form-select" required>
+                <option value="">Select an option / Selecciona una opción</option>
+                <option value="Residential cleaning">Residential cleaning / Limpieza residencial</option>
+                <option value="Deep cleaning">Deep cleaning / Limpieza profunda</option>
+                <option value="Move in / Move out">Move-in / Move-out</option>
+                <option value="Commercial cleaning">Commercial cleaning / Limpieza comercial</option>
+                <option value="Carpet care">Carpet care / Cuidado de alfombras</option>
+                <option value="Hotel housekeeping">Hotel housekeeping services</option>
+                <option value="Other">Other / Otro</option>
+              </select>
+            </div>
 
-<div class="mb-3">
-  <label class="form-label">Details / Detalles</label>
-  <textarea name="details" rows="4" class="form-control"
-    placeholder="Number of bedrooms, bathrooms, pets, special requests / Número de cuartos, baños, mascotas, solicitudes especiales"></textarea>
-</div>
+            <div class="mb-3">
+              <label class="form-label">Details / Detalles</label>
+              <textarea name="details" rows="4" class="form-control"
+               placeholder="Bedrooms, bathrooms, pets, special requests"></textarea>
+            </div>
 
-<button type="submit" class="btn btn-primary w-100">
-  Submit Quote Request / Enviar solicitud de cotización
-</button>
+            <button type="submit" class="btn btn-primary w-100">Submit Quote Request</button>
 
-<p class="mt-2 mb-0 text-muted" style="font-size: 0.85rem;">
-  By submitting this form you agree to be contacted by phone, text, or email about your quote.
-  / Al enviar este formulario aceptas que te contactemos por teléfono, texto o correo electrónico con tu cotización.
-</p>
+            <p class="text-muted mt-2 mb-0" style="font-size: 0.85rem;">
+              By submitting this form you agree to be contacted by phone, text, or email about your estimate.
+            </p>
 
           </form>
+          <!-- FORM END -->
+
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SHORT SERVICES PREVIEW -->
+<!-- SERVICES PREVIEW -->
 <section class="py-5">
   <div class="container">
-    <h2 class="section-title text-center mb-4">
-      Our Services / Nuestros servicios
-    </h2>
+    <h2 class="text-center section-title fw-bold mb-4">Our Services / Nuestros servicios</h2>
+
     <div class="row g-4">
+
       <div class="col-md-4">
-        <h3 class="h5">Residential Cleaning / Limpieza residencial</h3>
-        <p>Weekly, bi-weekly or monthly cleaning to keep your home fresh and organized. / Limpieza regular para mantener tu casa limpia y ordenada.</p>
+        <h3 class="h5 fw-bold">Residential Cleaning / Limpieza residencial</h3>
+        <p>Weekly, bi-weekly or monthly cleaning to keep your home fresh and organized.</p>
       </div>
+
       <div class="col-md-4">
-        <h3 class="h5">Deep Cleaning / Limpieza profunda</h3>
-        <p>Perfect for first-time cleanings or homes that need extra attention, focusing on kitchen and bathrooms. / Ideal para primeras limpiezas o espacios con acumulación difícil.</p>
+        <h3 class="h5 fw-bold">Deep Cleaning / Limpieza profunda</h3>
+        <p>Perfect for first-time cleanings or homes needing extra attention.</p>
       </div>
+
       <div class="col-md-4">
-        <h3 class="h5">Move-In / Move-Out & Commercial</h3>
-        <p>Cleaning for moving in or out and professional service for offices and businesses in Lancaster County, PA. / Limpieza de mudanza y limpieza comercial profesional.</p>
+        <h3 class="h5 fw-bold">Move-In / Move-Out & Commercial</h3>
+        <p>Cleaning for moves and professional cleaning for offices & businesses.</p>
       </div>
+
     </div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <div class="container text-center">
-    <p class="mb-1">
-      Lorenz Max Cleaning LLC · Lancaster County, Pennsylvania · Phone:
-      <a href="tel:+12233614467" class="link-light">(223) 361-4467</a>
-    </p>
-    <p class="mb-0">
-      Serving Willow Street, Lancaster City, Millersville, Strasburg, Mountville and nearby areas.
-    </p>
+    <p class="mb-1">Lorenz Max Cleaning LLC · Lancaster County, PA · Phone:
+      <a href="tel:+12233614467" class="link-light">(223) 361-4467</a></p>
+
+    <p class="mb-0">Serving Willow Street · Lancaster City · Millersville · Strasburg · Mountville · Nearby areas</p>
   </div>
 </footer>
 
+<!-- FLOATER WHATSAPP -->
+<a href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote"
+   class="whatsapp-float" target="_blank">💬</a>
+
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
