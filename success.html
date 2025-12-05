@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Thank you | Lorenz Max Cleaning LLC</title>
+  <title>Quote request received | Lorenz Max Cleaning LLC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Thank you for contacting Lorenz Max Cleaning LLC. We have received your quote request and will contact you shortly." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://lorenzmaxcleaning.com/success.html" />
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -11,96 +15,142 @@
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 0;
+      background: linear-gradient(135deg, #0d6efd, #00b4d8);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
-    /* Fondo degradado igual que la página principal */
-    .thankyou-hero {
-      min-height: 100vh;
-      background: linear-gradient(135deg, #0077b6, #00b4d8);
+    /* Navbar simple arriba */
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    /* Contenedor central */
+    .success-wrapper {
+      flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
-      text-align: center;
       padding: 2rem 1rem;
     }
 
-    .thankyou-card {
+    .success-card {
+      max-width: 540px;
       background: #ffffff;
-      color: #333;
-      max-width: 600px;
-      width: 100%;
       border-radius: 1rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
       padding: 2.5rem 2rem;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+      text-align: center;
     }
 
-    .thankyou-card h1 {
-      font-size: 2rem;
+    .success-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #d1f7e5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-size: 40px;
+      color: #198754;
+    }
+
+    .success-title {
+      font-size: 1.8rem;
+      font-weight: 700;
       margin-bottom: 0.75rem;
     }
 
-    .thankyou-card p {
-      margin-bottom: 0.75rem;
+    .success-text {
+      font-size: 0.98rem;
+      color: #555;
+      margin-bottom: 1.5rem;
     }
 
-    .thankyou-icon {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+    .success-subtext {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 2rem;
+    }
+
+    .btn-whatsapp {
+      background-color: #25d366;
+      border-color: #25d366;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1ebe57;
+      border-color: #1ebe57;
     }
 
     footer {
-      background: #00334e;
+      background: #003049;
       color: #f8f9fa;
-      padding: 1rem 0;
-      text-align: center;
       font-size: 0.9rem;
+      padding: 0.75rem 0;
     }
 
     footer a {
       color: #f8f9fa;
       text-decoration: underline;
     }
+
   </style>
 </head>
 <body>
 
-  <!-- Sección principal -->
-  <section class="thankyou-hero">
-    <div class="thankyou-card">
-      <div class="thankyou-icon">✨</div>
-      <h1>Thank you for your request!</h1>
-      <p>
-        We’ve received your quote request and our team at <strong>Lorenz Max Cleaning LLC</strong>
-        will review your information.
+  <!-- Navbar pequeña -->
+  <nav class="navbar navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="lorenz-max-logo.png" alt="Lorenz Max Cleaning logo" class="me-2">
+        <span class="fw-bold">Lorenz Max Cleaning</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="success-wrapper">
+    <div class="success-card">
+      <div class="success-icon">
+        ✓
+      </div>
+      <h1 class="success-title">Thank you! 🎉</h1>
+      <p class="success-text">
+        We’ve received your quote request and our team will review your information.
       </p>
-      <p>
-        We’ll contact you soon by phone, text, or email with a personalized estimate for your cleaning service.
-      </p>
-      <hr class="my-4">
-      <p class="mb-1"><strong>¿Hablas español?</strong></p>
-      <p class="mb-4">
-        También podemos ayudarte en español. Muy pronto nos pondremos en contacto contigo con tu cotización.
+      <p class="success-subtext">
+        You’ll hear from us soon by phone, text, or email with a personalized estimate for your cleaning service in Lancaster County, PA.
       </p>
 
-      <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-        <a href="index.html" class="btn btn-primary">
-          ⬅ Back to Home
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="index.html" class="btn btn-primary px-4">
+          ← Back to homepage
         </a>
-        <a href="https://wa.me/12233614467?text=Hi,%20I%20just%20submitted%20a%20quote%20request%20on%20your%20website"
-           target="_blank"
-           class="btn btn-success">
-          WhatsApp us
+        <a
+          href="https://wa.me/12233614467?text=Hi,%20I%20just%20submitted%20a%20quote%20request%20on%20your%20website"
+          target="_blank"
+          class="btn btn-whatsapp px-4 text-white"
+        >
+          Chat on WhatsApp
         </a>
       </div>
     </div>
-  </section>
+  </main>
 
   <!-- Footer -->
   <footer>
-    Lorenz Max Cleaning LLC · Lancaster County, Pennsylvania ·
-    Phone: <a href="tel:+12233614467">(223) 361-4467</a>
+    <div class="container text-center">
+      <p class="mb-1">
+        Lorenz Max Cleaning LLC · Lancaster County, Pennsylvania · Phone:
+        <a href="tel:+12233614467">(223) 361-4467</a>
+      </p>
+      <p class="mb-0">
+        Serving Willow Street, Lancaster City, Millersville, Strasburg, Mountville and nearby areas.
+      </p>
+    </div>
   </footer>
 
   <!-- Bootstrap JS -->
