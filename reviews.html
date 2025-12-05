@@ -4,138 +4,189 @@
   <meta charset="UTF-8" />
   <title>Reviews | Lorenz Max Cleaning LLC</title>
   <meta name="description"
-        content="Read reviews and testimonials from Lorenz Max Cleaning LLC clients in Lancaster County, PA." />
+        content="Read real customer reviews for Lorenz Max Cleaning LLC. Professional, reliable cleaning services in Lancaster County, PA." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="canonical" href="https://lorenzmaxcleaning.com/reviews.html" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <style>
-    body { font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:#f2f6fa; }
-    .page-hero { background:linear-gradient(135deg,#007bff,#00b4d8); color:#fff; padding:70px 0 50px; }
-    footer { background:#0d1b2a; color:#fff; padding:20px 0; margin-top:40px; }
-    .whatsapp-float { position:fixed; bottom:20px; right:20px; z-index:999; width:56px; height:56px; border-radius:50%; background:#25d366; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 8px rgba(0,0,0,0.3); text-decoration:none; color:#fff; font-size:28px; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #0d6efd, #0a58ca);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .page-section {
+      padding: 4rem 0;
+    }
+    .content-card {
+      background: #ffffff;
+      color: #212529;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      padding: 2.5rem;
+    }
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    .review-card {
+      background: #f8f9fa;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      height: 100%;
+    }
+    .review-name {
+      font-weight: 600;
+    }
+    .review-location {
+      font-size: 0.85rem;
+      color: #6c757d;
+    }
+    .stars {
+      color: #f6b400;
+      font-size: 1rem;
+    }
+    footer {
+      margin-top: auto;
+      background: rgba(0,0,0,0.25);
+      color: #f8f9fa;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #f8f9fa;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
-<!-- Navbar (Reviews activo) -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="lorenz-max-logo.png"
-           alt="Lorenz Max Cleaning logo"
-           height="40"
-           class="me-2">
-      <span class="fw-bold">Lorenz Max Cleaning</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="before-after.html">Before &amp; After</a></li>
-        <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+  <!-- NAVBAR (Reviews activo) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="lorenz-max-logo.png"
+             alt="Lorenz Max Cleaning logo"
+             height="40"
+             class="me-2">
+        <span class="fw-bold">Lorenz Max Cleaning</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="before-after.html">Before &amp; After</a></li>
+          <li class="nav-item"><a class="nav-link active" href="reviews.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-outline-success"
+               href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20to%20book%20a%20cleaning"
+               target="_blank">
+              WhatsApp
+            </a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary" href="tel:+12233614467">Call now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-        <!-- WhatsApp button -->
-        <li class="nav-item ms-lg-3">
-          <a class="btn btn-outline-success"
-             href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote"
-             target="_blank">
-            WhatsApp
+  <!-- REVIEWS SECTION -->
+  <section class="page-section">
+    <div class="container">
+      <div class="content-card">
+        <h1 class="section-title">What our clients say</h1>
+        <p>
+          Here are a few comments from families and businesses we’ve had the pleasure to serve
+          in Lancaster County, PA.
+        </p>
+
+        <div class="row g-4 mt-3">
+          <div class="col-md-6">
+            <div class="review-card">
+              <div class="stars mb-1">★★★★★</div>
+              <p>
+                “Lorenz Max Cleaning has been a game changer for our family. Our house looks spotless after
+                every visit and they pay attention to the little details. Very professional and easy to schedule.”
+              </p>
+              <div class="review-name">— Sarah M.</div>
+              <div class="review-location">Willow Street, PA</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="review-card">
+              <div class="stars mb-1">★★★★★</div>
+              <p>
+                “We hired them for a deep cleaning and move-out service and were extremely impressed.
+                The apartment looked better than when we moved in. Highly recommended.”
+              </p>
+              <div class="review-name">— Daniel R.</div>
+              <div class="review-location">Lancaster City, PA</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="review-card">
+              <div class="stars mb-1">★★★★★</div>
+              <p>
+                “Reliable, friendly and consistent. Our office stays clean and organized, and they are very
+                respectful of our working hours. Great communication as well.”
+              </p>
+              <div class="review-name">— Office Manager</div>
+              <div class="review-location">Millersville, PA</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="review-card">
+              <div class="stars mb-1">★★★★★</div>
+              <p>
+                “I love that they understand both English and Spanish, which makes everything easier for us.
+                They are careful with our pets and always leave the house smelling fresh.”
+              </p>
+              <div class="review-name">— Family Home</div>
+              <div class="review-location">Strasburg, PA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <p class="mb-2">Would you like to leave a review?</p>
+          <a href="mailto:lorenzmaxcleaning@gmail.com?subject=Lorenz%20Max%20Cleaning%20Review"
+             class="btn btn-primary me-2">
+            Send us your feedback by email
           </a>
-        </li>
-
-        <!-- Call button -->
-        <li class="nav-item ms-lg-2">
-          <a class="btn btn-primary" href="tel:+12233614467">Call now</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-<section class="page-hero">
-  <div class="container">
-    <h1>Client Reviews</h1>
-    <p class="lead mb-0">See what our customers say about Lorenz Max Cleaning in Lancaster County, PA.</p>
-  </div>
-</section>
-
-<section class="py-5">
-  <div class="container">
-    <div class="row g-4">
-
-      <div class="col-md-6">
-        <div class="bg-white rounded-3 shadow-sm p-4 h-100">
-          <h2 class="h6 mb-1">“My house has never been this clean!”</h2>
-          <p class="text-muted mb-1">– Residential client, Willow Street</p>
-          <p class="mb-0">
-            Very professional, on time and detail-oriented. They took care of every corner of the house.
-            I highly recommend Lorenz Max Cleaning.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="bg-white rounded-3 shadow-sm p-4 h-100">
-          <h2 class="h6 mb-1">“Reliable cleaning for our office”</h2>
-          <p class="text-muted mb-1">– Small business, Lancaster City</p>
-          <p class="mb-0">
-            Our office looks great after every visit. They are flexible with our schedule and very easy to work with.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="bg-white rounded-3 shadow-sm p-4 h-100">
-          <h2 class="h6 mb-1">“Amazing move-out cleaning”</h2>
-          <p class="text-muted mb-1">– Tenant, Millersville</p>
-          <p class="mb-0">
-            They helped us with a full move-out clean and the apartment looked like new.
-            The landlord was very impressed.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="bg-white rounded-3 shadow-sm p-4 h-100">
-          <h2 class="h6 mb-1">“Very friendly and trustworthy”</h2>
-          <p class="text-muted mb-1">– Homeowner, Strasburg</p>
-          <p class="mb-0">
-            I feel comfortable having them in my home. They are respectful, careful with my things and do a fantastic job.
-          </p>
+          <a href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20to%20share%20a%20review"
+             class="btn btn-outline-primary"
+             target="_blank">
+            Send review via WhatsApp
+          </a>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="text-center mt-5">
-      <p class="mb-3">
-        If you are already a client, we would love to hear from you!
+  <footer class="footer">
+    <div class="container text-center">
+      <p class="mb-1">
+        Lorenz Max Cleaning LLC · Lancaster County, Pennsylvania · Phone:
+        <a href="tel:+12233614467">(223) 361-4467</a>
       </p>
-      <!-- Cuando tengas tu enlace directo de reseñas de Google, lo puedes reemplazar aquí -->
-      <a href="https://www.google.com/search?q=Lorenz+Max+Cleaning+Lancaster+PA"
-         target="_blank"
-         class="btn btn-primary">Leave a review on Google</a>
+      <p class="mb-0">
+        Serving Willow Street, Lancaster City, Millersville, Strasburg, Mountville and nearby areas.
+      </p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<footer>
-  <div class="container text-center">
-    <p class="mb-1">Lorenz Max Cleaning LLC · Lancaster County, PA · Phone:
-      <a href="tel:+12233614467" class="link-light">(223) 361-4467</a></p>
-    <p class="mb-0">Serving Willow Street, Lancaster City, Millersville, Strasburg, Mountville and nearby areas.</p>
-  </div>
-</footer>
-
-<a href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote"
-   class="whatsapp-float" target="_blank">💬</a>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
