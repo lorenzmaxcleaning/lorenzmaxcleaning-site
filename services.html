@@ -4,163 +4,184 @@
   <meta charset="UTF-8" />
   <title>Services | Lorenz Max Cleaning LLC</title>
   <meta name="description"
-        content="Residential, deep cleaning, move-in/move-out, commercial cleaning, carpet care and hotel housekeeping services in Lancaster County, PA." />
+        content="Explore Lorenz Max Cleaning LLC services: residential cleaning, deep cleaning, move-in/move-out, commercial cleaning, carpet care and more in Lancaster County, PA." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="canonical" href="https://lorenzmaxcleaning.com/services.html" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:#f2f6fa; }
-    .page-hero { background:linear-gradient(135deg,#007bff,#00b4d8); color:#fff; padding:70px 0 50px; }
-    .page-hero h1 { font-weight:700; }
-    footer { background:#0d1b2a; color:#fff; padding:20px 0; margin-top:40px; }
-    .whatsapp-float { position:fixed; bottom:20px; right:20px; z-index:999; width:56px; height:56px; border-radius:50%; background:#25d366; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 8px rgba(0,0,0,0.3); text-decoration:none; color:#fff; font-size:28px; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #0d6efd, #0a58ca);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .page-section {
+      padding: 4rem 0;
+    }
+    .content-card {
+      background: #ffffff;
+      color: #212529;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      padding: 2.5rem;
+    }
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    .service-title {
+      font-weight: 600;
+    }
+    .tag {
+      display: inline-block;
+      background: rgba(13,110,253,0.1);
+      color: #0d6efd;
+      border-radius: 999px;
+      padding: 0.2rem 0.7rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    footer {
+      margin-top: auto;
+      background: rgba(0,0,0,0.25);
+      color: #f8f9fa;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #f8f9fa;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
-<!-- Navbar (igual que antes, con Services activo) -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="lorenz-max-logo.png"
-           alt="Lorenz Max Cleaning logo"
-           height="40"
-           class="me-2">
-      <span class="fw-bold">Lorenz Max Cleaning</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="before-after.html">Before &amp; After</a></li>
-        <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+  <!-- NAVBAR (con Services activo) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="lorenz-max-logo.png"
+             alt="Lorenz Max Cleaning logo"
+             height="40"
+             class="me-2">
+        <span class="fw-bold">Lorenz Max Cleaning</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="before-after.html">Before &amp; After</a></li>
+          <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-outline-success"
+               href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote"
+               target="_blank">
+              WhatsApp
+            </a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary" href="tel:+12233614467">Call now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-        <!-- WhatsApp button -->
-        <li class="nav-item ms-lg-3">
-          <a class="btn btn-outline-success"
-             href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote"
+  <!-- SERVICES SECTION -->
+  <section class="page-section">
+    <div class="container">
+      <div class="content-card">
+        <span class="tag mb-2">Services</span>
+        <h1 class="section-title">Cleaning services tailored to your home and business.</h1>
+        <p>
+          Every space is different. We offer flexible packages that can be customized to your needs,
+          schedule, and budget. Below is an overview of our most requested services.
+        </p>
+
+        <div class="row g-4 mt-3">
+          <div class="col-md-6">
+            <h2 class="h5 service-title">Residential Cleaning</h2>
+            <p>
+              Recurring weekly, bi-weekly, or monthly cleaning to keep your home fresh, organized,
+              and ready to enjoy. Includes dusting, vacuuming, mopping, bathrooms, kitchen surfaces,
+              and common areas.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="h5 service-title">Deep Cleaning</h2>
+            <p>
+              A top-to-bottom detailed cleaning ideal for first-time visits, seasonal cleanings,
+              or homes that need extra attention. Focus on kitchen, bathrooms, baseboards, doors,
+              light switches, and more.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="h5 service-title">Move-In / Move-Out Cleaning</h2>
+            <p>
+              Perfect for tenants, homeowners, and property managers. We prepare the property so it is
+              clean, fresh, and ready for the next move – inside cabinets, drawers, appliances, and more.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="h5 service-title">Commercial & Office Cleaning</h2>
+            <p>
+              Professional cleaning for offices, small businesses, and commercial spaces in Lancaster County.
+              We help you maintain a clean, safe, and welcoming environment for your staff and customers.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="h5 service-title">Carpet Care</h2>
+            <p>
+              Vacuuming and detailed care for area rugs and carpets as part of our cleaning visit.
+              Ask about options for high-traffic areas and homes with pets.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="h5 service-title">Hotel Housekeeping Support</h2>
+            <p>
+              We provide professional housekeeping support for hotels and hospitality properties,
+              bringing experience in room inspections, deep cleaning, and quality standards.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <a href="index.html#quote" class="btn btn-primary me-2">Request a free quote</a>
+          <a href="https://wa.me/12233614467?text=Hi,%20I%20have%20a%20question%20about%20your%20services"
+             class="btn btn-outline-primary"
              target="_blank">
-            WhatsApp
+            Message on WhatsApp
           </a>
-        </li>
-
-        <!-- Call button -->
-        <li class="nav-item ms-lg-2">
-          <a class="btn btn-primary" href="tel:+12233614467">Call now</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-<section class="page-hero">
-  <div class="container">
-    <h1>Cleaning Services in Lancaster County, PA</h1>
-    <p class="lead mb-0">
-      Reliable, high-quality cleaning for homes, apartments, offices and businesses.
-    </p>
-  </div>
-</section>
-
-<section class="py-5">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="bg-white rounded-3 shadow-sm p-4 h-100">
-          <h2 class="h5">Residential Cleaning</h2>
-          <p>Weekly, bi-weekly or monthly cleaning to keep your home consistently fresh.</p>
-          <ul>
-            <li>Dusting and surfaces</li>
-            <li>Bathrooms & kitchens</li>
-            <li>Floors vacuumed and mopped</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="bg-white rounded-3 shadow-sm p-4 h-100">
-          <h2 class="h5">Deep Cleaning</h2>
-          <p>Ideal for first-time cleanings or spaces that need extra attention.</p>
-          <ul>
-            <li>Baseboards, doors and trim</li>
-            <li>Inside appliances (upon request)</li>
-            <li>Bathroom detail and build-up removal</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="bg-white rounded-3 shadow-sm p-4 h-100">
-          <h2 class="h5">Move-In / Move-Out</h2>
-          <p>Perfect for landlords, tenants and property managers.</p>
-          <ul>
-            <li>Inside cabinets & closets</li>
-            <li>Detailed kitchen and bathrooms</li>
-            <li>Ready-to-show condition</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="bg-white rounded-3 shadow-sm p-4 h-100">
-          <h2 class="h5">Commercial Cleaning</h2>
-          <p>Professional service for offices, small businesses and commercial spaces.</p>
-          <ul>
-            <li>Common areas & restrooms</li>
-            <li>Floors and trash removal</li>
-            <li>Flexible schedules (evenings/weekends)</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="bg-white rounded-3 shadow-sm p-4 h-100">
-          <h2 class="h5">Carpet Care</h2>
-          <p>Vacuuming and carpet care to improve the look and feel of your floors.</p>
-          <ul>
-            <li>Residential and commercial areas</li>
-            <li>High-traffic zones</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="bg-white rounded-3 shadow-sm p-4 h-100">
-          <h2 class="h5">Hotel Housekeeping Support</h2>
-          <p>Experienced housekeeping support for hotels in Lancaster County.</p>
-          <ul>
-            <li>Room attendants and deep-clean teams</li>
-            <li>Professional and reliable</li>
-          </ul>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="text-center mt-5">
-      <a href="contact.html" class="btn btn-primary me-2">Request a quote</a>
-      <a href="tel:+12233614467" class="btn btn-outline-primary">Call now</a>
+  <footer class="footer">
+    <div class="container text-center">
+      <p class="mb-1">
+        Lorenz Max Cleaning LLC · Lancaster County, Pennsylvania · Phone:
+        <a href="tel:+12233614467">(223) 361-4467</a>
+      </p>
+      <p class="mb-0">
+        Serving Willow Street, Lancaster City, Millersville, Strasburg, Mountville and nearby areas.
+      </p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<footer>
-  <div class="container text-center">
-    <p class="mb-1">Lorenz Max Cleaning LLC · Lancaster County, PA · Phone:
-      <a href="tel:+12233614467" class="link-light">(223) 361-4467</a></p>
-    <p class="mb-0">Serving Willow Street, Lancaster City, Millersville, Strasburg, Mountville and nearby areas.</p>
-  </div>
-</footer>
-
-<a href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote"
-   class="whatsapp-float" target="_blank">💬</a>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
