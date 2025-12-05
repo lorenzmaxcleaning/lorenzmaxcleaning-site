@@ -2,95 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Thank you | Lorenz Max Cleaning</title>
+  <title>Thank you | Lorenz Max Cleaning LLC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Simple styles to match your main page -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f2f5fb;
-      color: #16365f;
+    }
+
+    /* Fondo degradado igual que la página principal */
+    .thankyou-hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-    }
-
-    .card {
-      background: #ffffff;
-      max-width: 600px;
-      width: 90%;
-      padding: 2.5rem 2rem;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-      border-radius: 12px;
+      color: #fff;
       text-align: center;
+      padding: 2rem 1rem;
     }
 
-    h1 {
-      margin-top: 0;
-      margin-bottom: 0.75rem;
+    .thankyou-card {
+      background: #ffffff;
+      color: #333;
+      max-width: 600px;
+      width: 100%;
+      border-radius: 1rem;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    .thankyou-card h1 {
       font-size: 2rem;
+      margin-bottom: 0.75rem;
     }
 
-    p {
-      margin: 0.4rem 0;
-      line-height: 1.4;
+    .thankyou-card p {
+      margin-bottom: 0.75rem;
     }
 
-    .brand {
-      font-weight: 600;
+    .thankyou-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
 
-    .btn {
-      margin-top: 1.8rem;
-      display: inline-block;
-      padding: 0.75rem 1.6rem;
-      border-radius: 999px;
-      text-decoration: none;
-      border: none;
-      cursor: pointer;
-      background-color: #007bff;
-      color: #ffffff;
-      font-weight: 600;
-      font-size: 0.95rem;
+    footer {
+      background: #00334e;
+      color: #f8f9fa;
+      padding: 1rem 0;
+      text-align: center;
+      font-size: 0.9rem;
     }
 
-    .btn:hover {
-      opacity: 0.9;
-    }
-
-    small {
-      display: block;
-      margin-top: 1rem;
-      font-size: 0.8rem;
-      color: #555;
+    footer a {
+      color: #f8f9fa;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <main class="card">
-    <h1>Thank you!</h1>
-    <p>We've received your quote request.</p>
-    <p>
-      A member of the <span class="brand">Lorenz Max Cleaning</span> team will
-      contact you soon with a personalized estimate.
-    </p>
 
-    <p style="margin-top:1.2rem;">
-      ¡Gracias! Hemos recibido tu solicitud de cotización.  
-      Muy pronto alguien de <span class="brand">Lorenz Max Cleaning</span>
-      se pondrá en contacto contigo.
-    </p>
+  <!-- Sección principal -->
+  <section class="thankyou-hero">
+    <div class="thankyou-card">
+      <div class="thankyou-icon">✨</div>
+      <h1>Thank you for your request!</h1>
+      <p>
+        We’ve received your quote request and our team at <strong>Lorenz Max Cleaning LLC</strong>
+        will review your information.
+      </p>
+      <p>
+        We’ll contact you soon by phone, text, or email with a personalized estimate for your cleaning service.
+      </p>
+      <hr class="my-4">
+      <p class="mb-1"><strong>¿Hablas español?</strong></p>
+      <p class="mb-4">
+        También podemos ayudarte en español. Muy pronto nos pondremos en contacto contigo con tu cotización.
+      </p>
 
-    <a class="btn" href="/">Back to home / Volver al inicio</a>
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+        <a href="index.html" class="btn btn-primary">
+          ⬅ Back to Home
+        </a>
+        <a href="https://wa.me/12233614467?text=Hi,%20I%20just%20submitted%20a%20quote%20request%20on%20your%20website"
+           target="_blank"
+           class="btn btn-success">
+          WhatsApp us
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <small>
-      If you need urgent assistance, you can call or text us at
-      (223) 361-4467.
-    </small>
-  </main>
+  <!-- Footer -->
+  <footer>
+    Lorenz Max Cleaning LLC · Lancaster County, Pennsylvania ·
+    Phone: <a href="tel:+12233614467">(223) 361-4467</a>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
