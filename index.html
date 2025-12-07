@@ -122,7 +122,26 @@
     border-radius: 12px;
     padding: 25px;
 }
+/* Nav links más elegantes */
+.navbar-nav .nav-link {
+  font-size: 0.95rem;
+  padding: 0.5rem 0.85rem;
+  font-weight: 500;
+}
 
+/* Botones pequeños en la barra superior */
+.navbar .btn-sm {
+  padding: 0.35rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+/* Ocultar iconos en móvil ya lo hace d-none d-md-flex,
+   pero si quieres también puedes reducir aún más el espacio en pantallas pequeñas */
+@media (max-width: 767.98px) {
+  .navbar-nav .nav-link {
+    padding: 0.4rem 0;
+  }
+}
   </style>
 </head>
 <body>
@@ -140,49 +159,49 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="before-after.html">Before &amp; After</a></li>
-        <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+  <div class="collapse navbar-collapse justify-content-between" id="mainNav">
+  <!-- Menú principal -->
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+      <a class="nav-link" href="about.html">ABOUT US</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="services.html">SERVICES</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="before-after.html">BEFORE &amp; AFTER</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="reviews.html">REVIEWS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">CONTACT</a>
+    </li>
+  </ul>
 
-        <!-- WhatsApp button -->
-        <li class="nav-item ms-lg-3">
-          <a class="btn btn-outline-success"
-             href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote"
-             target="_blank">
-            WhatsApp
-          </a>
-        </li>
+  <!-- Botones de acción a la derecha -->
+  <div class="d-flex align-items-center gap-2">
+    <a class="btn btn-outline-success btn-sm" 
+       href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote" 
+       target="_blank">
+      WhatsApp
+    </a>
 
-        <!-- Call button -->
-        <li class="nav-item ms-lg-2">
-          <a class="btn btn-primary" href="tel:+12233614467">Call now</a>
-        </li>
+    <a class="btn btn-primary btn-sm" href="tel:+12233614467">
+      Call now
+    </a>
 
-<!-- Social media buttons -->
-<li class="nav-item ms-2">
-  <a class="btn btn-outline-primary btn-social" href="#" target="_blank">
-    <i class="bi bi-facebook"></i>
-  </a>
-</li>
-
-<li class="nav-item ms-2">
-  <a class="btn btn-outline-primary btn-social" href="#" target="_blank">
-    <i class="bi bi-instagram"></i>
-  </a>
-</li>
-
-<li class="nav-item ms-2">
-  <a class="btn btn-outline-primary btn-social" href="#" target="_blank">
-    <i class="bi bi-tiktok"></i>
-  </a>
-</li>
-      </ul>
-    </div>
+    <a class="btn btn-outline-primary btn-social d-none d-md-flex" href="#" target="_blank">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <a class="btn btn-outline-primary btn-social d-none d-md-flex" href="#" target="_blank">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a class="btn btn-outline-primary btn-social d-none d-md-flex" href="#" target="_blank">
+      <i class="bi bi-tiktok"></i>
+    </a>
   </div>
+</div>
 </nav>
 
 
