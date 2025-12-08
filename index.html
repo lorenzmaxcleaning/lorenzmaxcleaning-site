@@ -27,7 +27,8 @@
 
       /* barra superior */
       .navbar {
-        background: #0d47a1;
+        background: white
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       }
 
       .navbar-brand {
@@ -87,13 +88,17 @@
 
       /* caja del formulario */
       .form-box {
-        background: rgba(255,255,255.092); /* blanco suave translúcido */
-        backdrop-filter: blur(3px);
-        border-radius: 14px;
+        background: #ffffffcc; /* blanco suave translúcido */
+        backdrop-filter: blur(6px);
+        border-radius: 12px;
         padding: 25px;
-        border:1px solid rgba(255,255,255,0.6);
+        color: #000;
       }
-
+        .form-box input::placeholder,
+        .form-box textarea::placeholder {
+           color: #555
+      }
+        
       /* Botones de redes sociales redondos */
       .btn-social {
         border-radius: 50%; /* hace el botón redondo */
