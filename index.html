@@ -1,390 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Lorenz Max Cleaning LLC | Professional Cleaning in Lancaster County, PA</title>
-  <meta name="description"
-        content="Professional residential and commercial cleaning services in Lancaster County, PA. Deep cleaning, move-in/move-out, carpet care and more. Serving Willow Street, Lancaster City, Millersville, Strasburg, Mountville and nearby areas. Free quote." />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lorenz Max Cleaning LLC | Professional Cleaning in Lancaster County, PA</title>
+    <meta name="description" content="Professional residential and commercial cleaning services in Lancaster County, PA. Deep cleaning, move-in/move-out, carpets, and more." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://lorenzmaxcleaning.com/" />
+    <!-- Canonical -->
+    <link rel="canonical" href="https://lorenzmaxcleaning.com/" />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
- 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
     <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11/font/bootstrap-icons.css">
- 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
- 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17783257296"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
-  gtag('config', 'AW-17783257296');
-</script>
- 
-<!-- Custom Style -->
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background-color: #f7f9fc;        /* fondo general */
-      margin: 0;
-    }
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet" />
 
-    /* barra superior */
-    .navbar {
-      background: #1976d2;
-    }
-
-    /* sección principal (hero) */
-    .hero {
-      background-color: #1976d2;
-      color: white;
-      padding: 40px 0 60px;
-    }
-
-    /* Botones de redes sociales redondos */
-    .btn-social {
-      border-radius: 50%;        /* hace el botón redondo */
-      width: 36px;               /* ancho del botón */
-      height: 36px;              /* alto del botón */
-      padding: 0;                /* sin padding para que el icono quede centrado */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .btn-social i {
-      font-size: 1.2rem;         /* tamaño del ícono */
-    }
-
-    .hero .btn-light {
-      background: white;
-      border: none;
-    }
-
-    .section-title {
-      color: #007bff;
-    }
-
-    .hero h1 {
-      font-size: 2.4rem;
-      font-weight: 700;
-      letter-spacing: 0.03em;
-    }
-
-    footer {
-      background: #0d1b2a;
-      color: white;
-      padding: 20px 0;
-      margin-top: 40px;
-    }
-
-    /* WhatsApp Floating Button */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: #25d366;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      text-decoration: none;
-      color: #fff;
-      font-size: 28px;
-    }
-
-    .navbar-brand {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      font-size: 1.05rem;
-    }
-
-    .nav-link {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 600;
-      text-transform: uppercase;
-      font-size: 0.9rem;
-    }
-
-    .form-box {
-      background: #ffffffcc;   /* blanco suave translúcido */
-      backdrop-filter: blur(6px);
-      border-radius: 12px;
-      padding: 25px;
-    }
-
-    /* Nav links más elegantes */
-    .navbar-nav .nav-link {
-      font-size: 0.80rem !important;   /* Reduce el tamaño del texto */
-      padding-left: 10px !important;   /* Reduce espacio entre items */
-      padding-right: 10px !important;
-      font-weight: 500;
-    }
-
-    /* Contenedor del menú más compacto */
-    .navbar-nav {
-      gap: 5px !important;  /* Compacta los botones */
-    }
-
-    /* Ajustar tamaño del logo */
-    .navbar-brand img {
-      max-height: 38px !important;
-    }
-
-    /* Botones pequeños en la barra superior */
-    .navbar .btn-sm {
-      padding: 0.35rem 0.8rem;
-      font-size: 0.85rem;
-    }
-
-    /* Ajustes en móvil */
-    @media (max-width: 767.98px) {
-      .navbar-nav .nav-link {
-        padding: 0.4rem 0;
+    <!-- Custom Style -->
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background-color: #f7f9fc; /* fondo general */
       }
-    }
-  </style>
-</head>
-<body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="lorenz-max-logo.png"
-           alt="Lorenz Max Cleaning logo"
-           height="40"
-           class="me-2">
-      <span class="fw-bold">Lorenz Max Cleaning</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  <div class="collapse navbar-collapse justify-content-between" id="mainNav">
-  <!-- Menú principal -->
-  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <li class="nav-item">
-      <a class="nav-link" href="about.html">ABOUT US</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="services.html">SERVICES</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="before-after.html">BEFORE &amp; AFTER</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="reviews.html">REVIEWS</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="contact.html">CONTACT</a>
-    </li>
-  </ul>
+      /* barra superior */
+      .navbar {
+        background: #1976d2;
+      }
 
-  <!-- Botones de acción a la derecha -->
-  <div class="d-flex align-items-center gap-2">
-    <a class="btn btn-outline-success btn-sm" 
-       href="https://wa.me/12233614467"
-       target="_blank">
-      WhatsApp
-    </a>
+      .navbar-brand {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        font-size: 1.05rem;
+      }
 
-    <a class="btn btn-primary btn-sm" href="tel:+12233614467">
-      Call now
-    </a>
+      .navbar-brand img {
+        max-height: 38px !important; /* tamaño del logo */
+      }
 
-    <a class="btn btn-outline-primary btn-social d-none d-md-flex" href="https://www.facebook.com/profile.php?id=61582546700990" 
-      target="_blank">
-      <i class="bi bi-facebook"></i>
-    </a>
-    <!-- <a class="btn btn-outline-primary btn-social d-none d-md-flex" href="https://www.instagram.com/lorenzmaxcleaning?igsh=MXQ1eDFhNG54dTlzbA%3D%3D&utm_source=qr"
-      <i class="bi bi-instagram"></i>
-    </a>
-    <a class="btn btn-outline-primary btn-social d-none d-md-flex" href="https://www.tiktok.com/@lorenz.max.cleanig?_r=1&_t=ZP-920oROLQAZz"
-      target="_blank">
-      <i class="bi bi-tiktok"></i>
-    </a>
-  </div>
-</div>
-</nav>
+      .navbar-nav .nav-link {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.8rem !important; /* texto más pequeño */
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
 
+      .navbar .btn-sm {
+        padding: 0.35rem 0.8rem;
+        font-size: 0.85rem;
+      }
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <div class="row align-items-center g-4">
+      .navbar-nav {
+        gap: 5px !important;
+      }
 
-      <div class="col-lg-7">
-       <span class="badge bg-warning text-dark mb-2">Servicios también en español</span>
-      
-        <h1 class="fw-bold">
-          Professional Cleaning Services in Lancaster County, PA
-        </h1>
+      /* sección principal (hero) */
+      .hero {
+        background-color: #1976d2;
+        color: white;
+        padding: 30px 0 60px; /* un poco menos arriba para subir el título */
+      }
 
-        <p class="mt-3">
-          Residential & commercial cleaning in Willow Street, Lancaster City, Millersville,
-          Strasburg, Mountville and all nearby areas in Lancaster County, PA.
-        </p>
+      .hero h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+      }
 
-        <p>
-          <strong>Servicios de limpieza profesional en todo el Condado de Lancaster, PA.</strong>
-          Limpieza profunda, regular, mudanzas, alfombras y más.
-        </p>
+      .hero p.lead {
+        font-size: 1rem;
+        max-width: 560px;
+      }
 
-        <a href="#quote" class="btn btn-outline-primary ms-2">Request a free quote</a>
-        <a href="contact.html" class="btn btn-outline-primary ms-2">Ver información de contacto</a>
-      </div>
+      /* badge español */
+      .badge-spanish {
+        background: #ffca28;
+        color: #212121;
+        font-weight: 600;
+      }
 
-      <!-- FORM CONTAINER -->
-      <div class="col-lg-5">
-        <div class="form-box text-dark rounded-3 shadow p-4">
+      /* caja del formulario */
+      .form-box {
+        background: #ffffffcc; /* blanco suave translúcido */
+        backdrop-filter: blur(6px);
+        border-radius: 12px;
+        padding: 25px;
+      }
 
-          <h2 class="h4 text-center fw-bold mb-2">Request your free quote</h2>
-          <p class="text-muted text-center mb-3">Tell us about your space and we'll reach out with a custom estimate.</p>
+      /* Botones de redes sociales redondos */
+      .btn-social {
+        border-radius: 50%; /* hace el botón redondo */
+        width: 36px;       /* ancho */
+        height: 36px;      /* alto */
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-          <!-- FORM START -->
-          <form id="quote" action="https://formspree.io/f/mldqljbz" method="POST">
-            <div class="mb-3">
-              <label class="form-label">Full Name / Nombre completo *</label>
-              <input type="text" name="name" class="form-control" required />
-            </div>
+      .btn-social i {
+        font-size: 1.2rem; /* tamaño del ícono */
+      }
 
-            <div class="mb-3">
-              <label class="form-label">Email *</label>
-              <input type="email" name="email" class="form-control" required />
-            </div>
+      /* botones claros en el hero */
+      .hero .btn-light {
+        background: white;
+        border: none;
+      }
 
-            <div class="mb-3">
-              <label class="form-label">Phone / Teléfono *</label>
-              <input type="text" name="phone" class="form-control" required />
-            </div>
+      /* título de secciones (otras páginas) */
+      .section-title {
+        color: #007bff;
+      }
 
-            <div class="mb-3">
-              <label class="form-label">Service Address (City / ZIP) / Dirección del servicio *</label>
-              <input type="text" name="address" class="form-control" required />
-            </div>
+      footer {
+        background: #0d1b2a;
+        color: white;
+        padding: 20px 0;
+        margin-top: 40px;
+      }
 
-            <div class="mb-3">
-              <label class="form-label">Service needed / Servicio requerido *</label>
-              <select name="service" class="form-select" required>
-                <option value="">Select an option / Selecciona una opción</option>
-                <option value="Residential cleaning">Residential cleaning / Limpieza residencial</option>
-                <option value="Deep cleaning">Deep cleaning / Limpieza profunda</option>
-                <option value="Move in / Move out">Move-in / Move-out</option>
-                <option value="Commercial cleaning">Commercial cleaning / Limpieza comercial</option>
-                <option value="Carpet care">Carpet care / Cuidado de alfombras</option>
-                <option value="Hotel housekeeping">Hotel housekeeping services</option>
-                <option value="Other">Other / Otro</option>
-              </select>
-            </div>
+      /* WhatsApp Floating Button */
+      .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #25d366;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+        color: #fff;
+        font-size: 28px;
+      }
 
-            <div class="mb-3">
-              <label class="form-label">Details / Detalles</label>
-              <textarea name="details" rows="4" class="form-control"
-               placeholder="Bedrooms, bathrooms, pets, special requests"></textarea>
-            </div>
+      .whatsapp-float:hover {
+        text-decoration: none;
+        background: #1ebe57;
+      }
 
-            <button type="submit" class="btn btn-primary w-100">Submit Quote Request</button>
+      @media (max-width: 767.98px) {
+        .navbar-nav .nav-link {
+          padding: 0.4rem 0;
+        }
 
-            <p class="text-muted mt-2 mb-0" style="font-size: 0.85rem;">
-              By submitting this form you agree to be contacted by phone, text, or email about your estimate.
-            </p>
+        .hero {
+          padding-top: 20px;
+        }
+      }
+    </style>
+  </head>
 
-          </form>
-          <!-- FORM END -->
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="logo_transparent.png" alt="Lorenz Max Cleaning logo" class="me-2" />
+          <span>Lorenz Max Cleaning</span>
+        </a>
 
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="before-after.html">BEFORE &amp; AFTER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reviews.html">REVIEWS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+
+            <!-- WhatsApp button -->
+            <li class="nav-item ms-lg-2">
+              <a
+                class="btn btn-outline-light btn-sm"
+                href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote"
+                target="_blank"
+              >
+                WhatsApp
+              </a>
+            </li>
+
+            <!-- Call now -->
+            <li class="nav-item">
+              <a class="btn btn-light btn-sm ms-lg-1" href="tel:+12233614467">Call now</a>
+            </li>
+
+            <!-- Social icons -->
+            <li class="nav-item d-none d-md-flex ms-2">
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.facebook.com/profile.php?id=61582546700990"
+                target="_blank"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+            <li class="nav-item d-none d-md-flex">
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.instagram.com/lorenzmaxcleaning"
+                target="_blank"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item d-none d-md-flex">
+              <a
+                class="btn btn-outline-light btn-social"
+                href="https://www.tiktok.com/@lorenzmaxcleaning"
+                target="_blank"
+              >
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </nav>
 
-<!-- SERVICES PREVIEW -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="text-center section-title fw-bold mb-4">Our Services / Nuestros servicios</h2>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <!-- Texto -->
+          <div class="col-lg-7">
+            <span class="badge badge-spanish mb-2">Servicios también en español</span>
 
-    <div class="row g-4">
+            <h1 class="fw-bold mt-2">
+              Professional Cleaning Services in Lancaster County, PA
+            </h1>
 
-      <div class="col-md-4">
-        <h3 class="h5 fw-bold">Residential Cleaning / Limpieza residencial</h3>
-        <p>Weekly, bi-weekly or monthly cleaning to keep your home fresh and organized.</p>
+            <p class="mt-3 lead">
+              Residential &amp; commercial cleaning in Willow Street, Lancaster City, Millersville,
+              Strasburg, Mountville and all nearby areas in Lancaster County, PA.
+            </p>
+
+            <p class="mt-2">
+              <strong>Servicios de limpieza profesional en todo el Condado de Lancaster, PA.</strong>
+              Limpieza profunda, regular, mudanzas, alfombras y más.
+            </p>
+
+            <div class="mt-4 d-flex flex-wrap gap-2">
+              <a href="#quote-form" class="btn btn-light btn-sm">Request a free quote</a>
+              <a href="contact.html" class="btn btn-outline-light btn-sm">View contact information</a>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <div class="col-lg-5">
+            <div class="form-box shadow">
+              <h2 class="h5 mb-3 text-dark text-center">
+                Request your free quote
+              </h2>
+              <p class="small text-muted text-center mb-3">
+                Tell us about your space and we’ll reach out with a custom estimate.
+              </p>
+
+              <!-- IMPORTANTE:
+                   Si ya tenías tu formulario funcionando,
+                   puedes reemplazar SOLO el <form> entero de aquí
+                   por el formulario que tenías antes
+                   (action, inputs, etc.) -->
+              <form id="quote-form" action="success.html" method="POST">
+                <div class="mb-3">
+                  <label class="form-label small">Full Name / Nombre completo *</label>
+                  <input type="text" name="name" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label small">Email *</label>
+                  <input type="email" name="email" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label small">Phone / Teléfono *</label>
+                  <input type="tel" name="phone" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label small">
+                    Service Address (City / ZIP) / Dirección del servicio *
+                  </label>
+                  <input type="text" name="address" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label small">
+                    Service needed / Servicio requerido *
+                  </label>
+                  <select name="service" class="form-select" required>
+                    <option value="">Select an option / Selecciona una opción</option>
+                    <option>Residential Cleaning</option>
+                    <option>Deep Cleaning</option>
+                    <option>Move-in / Move-out</option>
+                    <option>Carpet Cleaning</option>
+                    <option>Post-construction Cleaning</option>
+                    <option>Commercial / Office Cleaning</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label small">
+                    Details / Detalles (bedrooms, bathrooms, pets, special requests)
+                  </label>
+                  <textarea name="details" rows="3" class="form-control"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">
+                  Submit Quote Request
+                </button>
+
+                <p class="text-muted small mt-2 mb-0">
+                  By submitting this form you agree to be contacted by phone, text, or email
+                  about your estimate.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="col-md-4">
-        <h3 class="h5 fw-bold">Deep Cleaning / Limpieza profunda</h3>
-        <p>Perfect for first-time cleanings or homes needing extra attention.</p>
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center small">
+        Lorenz Max Cleaning LLC &copy; <span id="year"></span> – Professional Cleaning Services in Lancaster
+        County, PA.
       </div>
+    </footer>
 
-      <div class="col-md-4">
-        <h3 class="h5 fw-bold">Move-In / Move-Out & Commercial</h3>
-        <p>Cleaning for moves and professional cleaning for offices & businesses.</p>
-      </div>
+    <!-- WhatsApp floating button -->
+    <a
+      href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="bi bi-whatsapp"></i>
+    </a>
 
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="container text-center">
-    <p class="mb-1">Lorenz Max Cleaning LLC · Lancaster County, PA · Phone:
-      <a href="tel:+12233614467" class="link-light">(223) 361-4467</a></p>
-
-    <p class="mb-0">Serving Willow Street · Lancaster City · Millersville · Strasburg · Mountville · Nearby areas</p>
-  </div>
-</footer>
-
-<!-- FLOATER WHATSAPP -->
-<a href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote"
-   class="whatsapp-float" target="_blank">💬</a>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Script para redirigir a success.html después de enviar el formulario -->
-<script>
-  const quoteForm = document.getElementById('quote');
-
-  if (quoteForm) {
-    quoteForm.addEventListener('submit', async function (e) {
-      e.preventDefault();  // Evita el envío normal
-
-      const form = e.target;
-      const data = new FormData(form);
-
-      try {
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        });
-
-        if (response.ok) {
-          // 👇 Redirección correcta
-          window.location.href = "success.html";
-        } else {
-          alert("There was a problem sending your request. Please try again.");
-        }
-      } catch (error) {
-        alert("Network error. Please try again.\nError: " + error);
-      }
-    });
-  }
-</script>
-
-</body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // año automático en el footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
