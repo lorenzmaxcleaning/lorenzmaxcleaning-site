@@ -323,7 +323,256 @@
               Professional Cleaning Services in Lancaster County, PA
               
             </h1>   
+[4:23 PM, 4/18/2026] Ronald: <section style="padding:40px; text-align:center;">
+[4:31 PM, 4/18/2026] Ronald: <div style="margin-top:30px; text-align:center;">
+  <h2 style="color:white; font-weight:800; margin-bottom:10px;">
+    Commercial Cleaning Results
+  </h2>
 
+  <p style="color:white; opacity:0.92; margin-bottom:22px;">
+    Professional results for offices, large facilities and commercial spaces
+  </p>
+
+  <div class="commercial-slider" id="commercialSlider">
+    <div class="commercial-slides">
+      <div class="commercial-slide active">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=80" alt="Commercial office before cleaning">
+        <div class="commercial-overlay">
+          <span class="commercial-tag">Office Space</span>
+          <h3>Detailed Commercial Cleaning</h3>
+          <p>Professional presentation for high-traffic work areas.</p>
+        </div>
+      </div>
+
+      <div class="commercial-slide">
+        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80" alt="Commercial office after cleaning">
+        <div class="commercial-overlay">
+          <span class="commercial-tag">Facility Care</span>
+          <h3>Reliable Results</h3>
+          <p>Consistent quality for businesses that need to look their best.</p>
+        </div>
+      </div>
+
+      <div class="commercial-slide">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80" alt="Large commercial interior">
+        <div class="commercial-overlay">
+          <span class="commercial-tag">Large Spaces</span>
+          <h3>Commercial-Grade Service</h3>
+          <p>Ideal for offices, common areas and large professional spaces.</p>
+        </div>
+      </div>
+
+      <div class="commercial-slide">
+        <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=1400&q=80" alt="Professional commercial environment">
+        <div class="commercial-overlay">
+          <span class="commercial-tag">Professional Image</span>
+          <h3>Clean Spaces That Impress</h3>
+          <p>A better first impression for clients, staff and visitors.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="commercial-arrow commercial-arrow-left" onclick="moveCommercialSlide(-1)">&#10094;</button>
+    <button class="commercial-arrow commercial-arrow-right" onclick="moveCommercialSlide(1)">&#10095;</button>
+
+    <div class="commercial-dots">
+      <span class="commercial-dot active" onclick="goToCommercialSlide(0)"></span>
+      <span class="commercial-dot" onclick="goToCommercialSlide(1)"></span>
+      <span class="commercial-dot" onclick="goToCommercialSlide(2)"></span>
+      <span class="commercial-dot" onclick="goToCommercialSlide(3)"></span>
+    </div>
+  </div>
+</div>
+
+<style>
+.commercial-slider{
+  position:relative;
+  max-width:950px;
+  margin:0 auto 10px auto;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 14px 35px rgba(0,0,0,0.28);
+  background:#0d1b2a;
+}
+
+.commercial-slides{
+  position:relative;
+  width:100%;
+  height:440px;
+}
+
+.commercial-slide{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transform:scale(1.03);
+  transition:opacity .7s ease, transform .7s ease;
+  pointer-events:none;
+}
+
+.commercial-slide.active{
+  opacity:1;
+  transform:scale(1);
+  pointer-events:auto;
+}
+
+.commercial-slide img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.commercial-overlay{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:28px 24px 24px;
+  text-align:left;
+  color:white;
+  background:linear-gradient(to top, rgba(0,0,0,.72), rgba(0,0,0,.12), rgba(0,0,0,0));
+}
+
+.commercial-overlay h3{
+  margin:10px 0 8px 0;
+  font-size:28px;
+  font-weight:800;
+}
+
+.commercial-overlay p{
+  margin:0;
+  font-size:15px;
+  opacity:.95;
+  max-width:620px;
+}
+
+.commercial-tag{
+  display:inline-block;
+  padding:7px 12px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.18);
+  backdrop-filter:blur(4px);
+  font-size:13px;
+  font-weight:700;
+}
+
+.commercial-arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:48px;
+  height:48px;
+  border:none;
+  border-radius:50%;
+  background:rgba(0,0,0,0.42);
+  color:white;
+  font-size:24px;
+  cursor:pointer;
+  z-index:5;
+}
+
+.commercial-arrow:hover{
+  background:rgba(0,0,0,0.62);
+}
+
+.commercial-arrow-left{
+  left:16px;
+}
+
+.commercial-arrow-right{
+  right:16px;
+}
+
+.commercial-dots{
+  position:absolute;
+  left:50%;
+  bottom:16px;
+  transform:translateX(-50%);
+  display:flex;
+  gap:10px;
+  z-index:6;
+}
+
+.commercial-dot{
+  width:11px;
+  height:11px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.45);
+  cursor:pointer;
+}
+
+.commercial-dot.active{
+  background:white;
+}
+
+@media (max-width: 768px){
+  .commercial-slides{
+    height:320px;
+  }
+
+  .commercial-overlay h3{
+    font-size:22px;
+  }
+
+  .commercial-overlay p{
+    font-size:14px;
+  }
+
+  .commercial-arrow{
+    width:40px;
+    height:40px;
+    font-size:20px;
+  }
+}
+</style>
+
+<script>
+let commercialCurrentSlide = 0;
+const commercialSlides = document.querySelectorAll('.commercial-slide');
+const commercialDots = document.querySelectorAll('.commercial-dot');
+let commercialInterval;
+
+function showCommercialSlide(index){
+  if (!commercialSlides.length) return;
+
+  if(index >= commercialSlides.length) commercialCurrentSlide = 0;
+  else if(index < 0) commercialCurrentSlide = commercialSlides.length - 1;
+  else commercialCurrentSlide = index;
+
+  commercialSlides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === commercialCurrentSlide);
+  });
+
+  commercialDots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === commercialCurrentSlide);
+  });
+}
+
+function moveCommercialSlide(step){
+  showCommercialSlide(commercialCurrentSlide + step);
+  resetCommercialAutoSlide();
+}
+
+function goToCommercialSlide(index){
+  showCommercialSlide(index);
+  resetCommercialAutoSlide();
+}
+
+function startCommercialAutoSlide(){
+  commercialInterval = setInterval(() => {
+    showCommercialSlide(commercialCurrentSlide + 1);
+  }, 4500);
+}
+
+function resetCommercialAutoSlide(){
+  clearInterval(commercialInterval);
+  startCommercialAutoSlide();
+}
+
+showCommercialSlide(0);
+startCommercialAutoSlide();
+</script>
 <section style="padding:40px; text-align:center;">
   <h2>Our Work</h2>
 
