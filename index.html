@@ -600,6 +600,10 @@ section p {
 <script>
 let commercialCurrentSlide = 0;
 const commercialSlides = document.querySelectorAll('.commercial-slide');
+  commercialSlides.forEach(slide => {
+    slide.style.background = "#0b1f2e";
+    slide.style.backgroundImage = "none";
+});
 const commercialDots = document.querySelectorAll('.commercial-dot');
 let commercialInterval;
 
