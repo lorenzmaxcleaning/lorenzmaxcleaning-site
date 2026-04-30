@@ -120,17 +120,16 @@
 
 /* sección principal (hero) */
 .hero {
-  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+   background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
   url('https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?auto=format&fit=crop&w=1800&q=80');
 
   background-size: cover;
-  background-position: center top;
+  background-position: center center;
   background-repeat: no-repeat;
 
   color: white;
-  padding: 80px 8%;
-
-  height: 350px; /* 👈 controla el tamaño SOLO arriba */
+  padding: 100px 8%;
+  min-height: 430px;
 
   display: block;
 }
@@ -142,6 +141,7 @@
   font-weight: 800;
   max-width: 620px;
   line-height: 1.2;
+   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);        
 }
       .hero p.lead {
         font-size: 1rem;
