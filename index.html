@@ -393,7 +393,79 @@ section p {
             </h1>   
  
   <h2>Our Work</h2>
+<div class="col-lg-5" style="margin-top:200px;">
+            <div class="form-box shadow">
+              <h2 class="h5 mb-3 text-dark text-center">
+                Request your free quote
+              </h2>
+              <p class="small text-muted text-center mb-3">
+                Tell us about your space and we’ll reach out with a custom estimate.
+              </p>
 
+              <!-- IMPORTANTE:
+                   Si ya tenías tu formulario funcionando,
+                   puedes reemplazar SOLO el <form> entero de aquí
+                   por el formulario que tenías antes
+                   (action, inputs, etc.) -->
+              <form id="quote-form" action="success.html" method="POST">
+                <div class="mb-3">
+                  <label class="form-label small">Full Name / Nombre completo *</label>
+                  <input type="text" name="name" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label small">Email *</label>
+                  <input type="email" name="email" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label small">Phone / Teléfono *</label>
+                  <input type="tel" name="phone" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label small">
+                    Service Address (City / ZIP) / Dirección del servicio *
+                  </label>
+                  <input type="text" name="address" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label small">
+                    Service needed / Servicio requerido *
+                  </label>
+                  <select name="service" class="form-select" required>
+                    <option value="">Select an option / Selecciona una opción</option>
+                    <option>Residential Cleaning</option>
+                    <option>Deep Cleaning</option>
+                    <option>Move-in / Move-out</option>
+                    <option>Carpet Cleaning</option>
+                    <option>Post-construction Cleaning</option>
+                    <option>Commercial / Office Cleaning</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label small">
+                    Details / Detalles (bedrooms, bathrooms, pets, special requests)
+                  </label>
+                  <textarea name="details" rows="3" class="form-control"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">
+                  Submit Quote Request
+                </button>
+
+                <p class="text-muted small mt-2 mb-0">
+                  By submitting this form you agree to be contacted by phone, text, or email
+                  about your estimate.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 <div id="ourWorkCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
 
   <div class="carousel-indicators">
@@ -471,79 +543,7 @@ section p {
           </div>
 
           <!-- Formulario -->
-          <div class="col-lg-5" style="margin-top:200px;">
-            <div class="form-box shadow">
-              <h2 class="h5 mb-3 text-dark text-center">
-                Request your free quote
-              </h2>
-              <p class="small text-muted text-center mb-3">
-                Tell us about your space and we’ll reach out with a custom estimate.
-              </p>
-
-              <!-- IMPORTANTE:
-                   Si ya tenías tu formulario funcionando,
-                   puedes reemplazar SOLO el <form> entero de aquí
-                   por el formulario que tenías antes
-                   (action, inputs, etc.) -->
-              <form id="quote-form" action="success.html" method="POST">
-                <div class="mb-3">
-                  <label class="form-label small">Full Name / Nombre completo *</label>
-                  <input type="text" name="name" class="form-control" required />
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label small">Email *</label>
-                  <input type="email" name="email" class="form-control" required />
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label small">Phone / Teléfono *</label>
-                  <input type="tel" name="phone" class="form-control" required />
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label small">
-                    Service Address (City / ZIP) / Dirección del servicio *
-                  </label>
-                  <input type="text" name="address" class="form-control" required />
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label small">
-                    Service needed / Servicio requerido *
-                  </label>
-                  <select name="service" class="form-select" required>
-                    <option value="">Select an option / Selecciona una opción</option>
-                    <option>Residential Cleaning</option>
-                    <option>Deep Cleaning</option>
-                    <option>Move-in / Move-out</option>
-                    <option>Carpet Cleaning</option>
-                    <option>Post-construction Cleaning</option>
-                    <option>Commercial / Office Cleaning</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label small">
-                    Details / Detalles (bedrooms, bathrooms, pets, special requests)
-                  </label>
-                  <textarea name="details" rows="3" class="form-control"></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary w-100">
-                  Submit Quote Request
-                </button>
-
-                <p class="text-muted small mt-2 mb-0">
-                  By submitting this form you agree to be contacted by phone, text, or email
-                  about your estimate.
-                </p>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+          
     </section>
 
     <!-- Footer -->
