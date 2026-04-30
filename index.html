@@ -1,574 +1,396 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-   
-</div>
-    <meta charset="UTF-8" />
-    <title>Lorenz Max Cleaning LLC | Professional Cleaning in Lancaster County, PA</title>
-    <meta name="description" content="Professional residential and commercial cleaning services in Lancaster County, PA. Deep cleaning, move-in/move-out, carpets, and more." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://lorenzmaxcleaning.com/" />
+  <title>Lorenz Max Cleaning LLC | Professional Cleaning in Lancaster County, PA</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta name="description" content="Professional residential and commercial cleaning services in Lancaster County, PA. Deep cleaning, regular cleaning, carpet cleaning, post-construction cleaning, office cleaning and more.">
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet" />
-
-    <!-- Custom Style -->
-    <style>
-      body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background-color: #E3F2FD; /* fondo general */
-      }
-
-      /* barra superior */
-      .navbar {
-        background: white
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      }
-
-      .navbar-brand {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        font-size: 1.05rem;
-          color: #0d47a1
-      }
-
-      .navbar-brand img {
-        max-height: 55px !important; /* tamaño del logo */
-        witdt: auto !important;
-      }
-
-      .navbar-nav .nav-link {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: 0.8rem !important; /* texto más pequeño */
-        color: #003366 !important;
-        padding: 0.35rem 10x !important;
-        display: flex;
-        aling-items: center;
-        
-      }
-/* === Botón CALL NOW (azul) === */
-.navbar .btn-call {
-    background-color: #0d47a1 !important; /* Azul */
-    color: #fff !important;
-    border: none !important;
-    padding: 4px 10px !important;
-    border-radius: 5px !important;
-    font-size: 0.70rem
-    font-weight: 600;
-}
-
-.navbar .btn-call:hover {
-    background-color: #08336e !important; /* Azul más oscuro */
-    color: #fff !important;
-}
-
-
-/* === Botón WHATSAPP (verde) === */
-.navbar .btn-whatsapp {
-    background-color: #25d366 !important; /* Verde WhatsApp */
-    color: #fff !important;
-    border: none !important;
-    padding: 4px 10px !important;
-    border-radius: 5px !important;
-    font-size: 0.70rem
-    font-weight: 600;
-}
-
-.navbar .btn-whatsapp:hover {
-    background-color: #1ebe57 !important; /* Verde más oscuro */
-}
-
-
-/* === Iconos redondos de Facebook, Instagram y TikTok === */
-.btn-social {
-    background-color: #0d47a1 !important; /* Azul oscuro elegante */
-    color: #fff !important;
-    width: 36px;
-    height: 36px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    border: none;
-}
-
-.btn-social:hover {
-    background-color: #08336e !important; /* Más oscuro al pasar el mouse */
-}
-
-      .navbar .btn-sm {
-        padding: 0.35rem 0.8rem;
-        font-size: 0.85rem;
-      }
-
-      .navbar-nav {
-        gap: 5px !important;
-      }
-
-/* sección principal (hero) */
-.hero {
-   background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-  url('https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?auto=format&fit=crop&w=1800&q=80');
-
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-
-  color: white;
- height: 260px;
-padding: 40px 8%;
-
-  display: block;
-}
+  <style>
     body {
-background-color: #1f2933;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #1f2933;
     }
+
+    .navbar {
+      background: #111827;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: white !important;
+      font-weight: 600;
+    }
+
+    .hero {
+      min-height: 90vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+        url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 6vw, 4rem);
+      font-weight: 900;
+      line-height: 1.1;
+      max-width: 800px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 650px;
+      margin-top: 20px;
+    }
+
+    .btn-main {
+      background: #facc15;
+      color: #111827;
+      font-weight: 800;
+      border-radius: 8px;
+      padding: 12px 22px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 8px;
+    }
+
+    .btn-outline-light-custom {
+      border: 2px solid white;
+      color: white;
+      font-weight: 700;
+      border-radius: 8px;
+      padding: 10px 22px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 8px;
+    }
+
+    section {
+      padding: 70px 20px;
+    }
+
+    .section-title {
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      height: 100%;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .service-card i {
+      font-size: 38px;
+      color: #facc15;
+      margin-bottom: 15px;
+    }
+
+    .dark-section {
+      background: #111827;
+      color: white;
+    }
+
+    .work-img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .quote-box {
+      background: white;
+      border-radius: 18px;
+      padding: 35px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .form-control,
+    .form-select {
+      padding: 13px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25d366;
+      color: white;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 34px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 80vh;
+        text-align: left;
+      }
+
       section {
-  background-color: #1f2933;
-  color: white;
-}
-
-section h2,
-section p {
-  color: white;
-}
-
-        .hero h1 {
-  font-size: 2rem;
-  font-weight: 800;
-  max-width: 620px;
-  line-height: 1.2;
-   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);        
-}
-      .hero p.lead {
-        font-size: 1rem;
-        max-width: 560px;
+        padding: 50px 15px;
       }
+    }
+  </style>
+</head>
 
-      /* badge español */
-      .badge-spanish {
-        background: #ffca28;
-        color: #212121;
-        font-weight: 600;
-      }
+<body>
 
-      /* caja del formulario */
-      .form-box {
-        background: #ffffffcc; /* blanco suave translúcido */
-        backdrop-filter: blur(6px);
-        border-radius: 12px;
-        padding: 25px;
-        color: #000;
-      }
-        .form-box input::placeholder,
-        .form-box textarea::placeholder {
-           color: #555
-      }
-        
-      /* Botones de redes sociales redondos */
-      .btn-social {
-        border-radius: 50%; /* hace el botón redondo */
-        width: 36px;       /* ancho */
-        height: 36px;      /* alto */
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Lorenz Max Cleaning</a>
 
-      .btn-social i {
-        font-size: 1.2rem; /* tamaño del ícono */
-      }
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      /* botones claros en el hero */
-      .hero .btn-light {
-        background: white;
-        border: none;
-      }
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#work">Our Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#quote">Free Quote</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-      /* título de secciones (otras páginas) */
-      .section-title {
-        color: #007bff;
-      }
+<header class="hero">
+  <div class="container">
+    <span class="badge bg-warning text-dark mb-3 fs-6">Professional Cleaning Services</span>
 
-      footer {
-        background: #f5f5f5;
-        color: white;
-        padding: 20px 0;
-        margin-top: 40px;
-      }
-.results-section {
-  background-image: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 80px 20px;
-  color: white;
-  position: relative;
-}
+    <h1>Professional Cleaning Services in Lancaster County, PA</h1>
 
-.results-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-}
+    <p>
+      Reliable residential and commercial cleaning services for homes, offices,
+      apartments, carpets, post-construction projects, and more.
+    </p>
 
-.results-section * {
-  position: relative;
-  z-index: 2;
-}
-      /* WhatsApp Floating Button */
-      .whatsapp-float {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 999;
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-        background: #25D366;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        text-decoration: none;
-        color: #fff;
-        font-size: 28px;
-      }
+    <a href="#quote" class="btn-main">Request a Free Quote</a>
+    <a href="tel:12233614467" class="btn-outline-light-custom">Call Now</a>
+    <a href="mailto:lorenzmaxcleaning@gmail.com" class="btn-outline-light-custom">Email Us</a>
+  </div>
+</header>
 
-      .whatsapp-float:hover {
-        text-decoration: none;
-        background: #1ebe57;
-        .results-section {
-  background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
-  padding: 80px 20px;
-  color: white;
-  position: relative;
-}
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">Our Cleaning Services</h2>
 
-.results-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(13, 27, 42, 0.6);
-}
+    <div class="row g-4">
 
-.results-section * {
-  position: relative;
-  z-index: 2;
-}
-      }
-
-      @media (max-width: 767.98px) {
-        .navbar-nav .nav-link {
-          padding: 0.4rem 0;
-        }
-
-        .hero {
-          padding-top: 20px;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
- …
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="/">
-          <img src="logo_transparent.png" alt="Lorenz Max Cleaning logo" class="me-2" />
-          <span>Lorenz Max Cleaning</span>
-        </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-          aria-controls="mainNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">SERVICES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="before-after.html">BEFORE &amp; AFTER</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="reviews.html">REVIEWS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT</a>
-            </li>
-
-            <!-- WhatsApp button -->
-            <li class="nav-item ms-lg-2">
-              <a class="btn btn-smt btn-whatsapp ms-1g-1" 
-                href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote"
-                target="_blank"
-              >
-                WhatsApp
-              </a>
-            </li>
-
-            <!-- Call now -->
-            <li class="nav-item">
-              <a class="btn btn-callnow btn-sm ms-lg-1" href="tel:+12233614467">Call now</a>
-            </li>
-
-            <!-- Social icons -->
-            <li class="nav-item d-none d-md-flex ms-2">
-              <a
-                class="btn btn-outline-light btn-social"
-                href="https://www.facebook.com/profile.php?id=61582546700990"
-                target="_blank"
-              >
-                <i class="bi bi-facebook"></i>
-              </a>
-            </li>
-            <li class="nav-item d-none d-md-flex">
-              <a
-                class="btn btn-outline-light btn-social"
-                href="https://www.instagram.com/lorenzmaxcleaning"
-                target="_blank"
-              >
-                <i class="bi bi-instagram"></i>
-              </a>
-            </li>
-            <li class="nav-item d-none d-md-flex">
-              <a
-                class="btn btn-outline-light btn-social"
-                href="https://www.tiktok.com/@lorenzmaxcleaning"
-                target="_blank"
-              >
-                <i class="bi bi-tiktok"></i>
-              </a>
-            </li>
-          </ul>
+      <div class="col-md-4">
+        <div class="service-card">
+          <i class="bi bi-house-door-fill"></i>
+          <h4>Residential Cleaning</h4>
+          <p>Regular and deep cleaning for homes, apartments, move-in and move-out cleaning.</p>
         </div>
       </div>
-    </nav>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container">
-        <div class="row align-items-center g-4">
-          <!-- Texto -->
-          <div class="col-lg-7">
-            <span class="badge badge-spanish mb-2">Servicios también en español</span>
-
-            <h1 class="fw-bold mt-2">
-              Professional Cleaning Services in Lancaster County, PA
-              
-            </h1>   
- 
- 
-<div class="col-lg-5" style="margin-top:200px;">
-            <div class="form-box shadow">
-              <h2 class="h5 mb-3 text-dark text-center">
-                Request your free quote
-              </h2>
-              <p class="small text-muted text-center mb-3">
-                Tell us about your space and we’ll reach out with a custom estimate.
-              </p>
-
-              <!-- IMPORTANTE:
-                   Si ya tenías tu formulario funcionando,
-                   puedes reemplazar SOLO el <form> entero de aquí
-                   por el formulario que tenías antes
-                   (action, inputs, etc.) -->
-              <form id="quote-form" action="success.html" method="POST">
-                <div class="mb-3">
-                  <label class="form-label small">Full Name / Nombre completo *</label>
-                  <input type="text" name="name" class="form-control" required />
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label small">Email *</label>
-                  <input type="email" name="email" class="form-control" required />
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label small">Phone / Teléfono *</label>
-                  <input type="tel" name="phone" class="form-control" required />
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label small">
-                    Service Address (City / ZIP) / Dirección del servicio *
-                  </label>
-                  <input type="text" name="address" class="form-control" required />
-                </div>
- <h2>Our Work</h2>
-                <div class="mb-3">
-                  <label class="form-label small">
-                    Service needed / Servicio requerido *
-                  </label>
-                  <select name="service" class="form-select" required>
-                    <option value="">Select an option / Selecciona una opción</option>
-                    <option>Residential Cleaning</option>
-                    <option>Deep Cleaning</option>
-                    <option>Move-in / Move-out</option>
-                    <option>Carpet Cleaning</option>
-                    <option>Post-construction Cleaning</option>
-                    <option>Commercial / Office Cleaning</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label small">
-                    Details / Detalles (bedrooms, bathrooms, pets, special requests)
-                  </label>
-                  <textarea name="details" rows="3" class="form-control"></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary w-100">
-                  Submit Quote Request
-                </button>
-
-                <p class="text-muted small mt-2 mb-0">
-                  By submitting this form you agree to be contacted by phone, text, or email
-                  about your estimate.
-                </p>
-              </form>
-            </div>
-          </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <i class="bi bi-building-fill"></i>
+          <h4>Commercial Cleaning</h4>
+          <p>Office cleaning, common areas, restrooms, lobbies, break rooms, and business spaces.</p>
         </div>
       </div>
-<div id="ourWorkCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
 
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#ourWorkCarousel" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#ourWorkCarousel" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#ourWorkCarousel" data-bs-slide-to="2"></button>
-    <button type="button" data-bs-target="#ourWorkCarousel" data-bs-slide-to="3"></button>
-    <button type="button" data-bs-target="#ourWorkCarousel" data-bs-slide-to="4"></button>
-    <button type="button" data-bs-target="#ourWorkCarousel" data-bs-slide-to="5"></button>
-    <button type="button" data-bs-target="#ourWorkCarousel" data-bs-slide-to="6"></button>
-    <button type="button" data-bs-target="#ourWorkCarousel" data-bs-slide-to="7"></button>
+      <div class="col-md-4">
+        <div class="service-card">
+          <i class="bi bi-brush-fill"></i>
+          <h4>Carpet Cleaning</h4>
+          <p>Professional carpet cleaning for apartments, homes, offices, and high-traffic areas.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="service-card">
+          <i class="bi bi-tools"></i>
+          <h4>Post-Construction Cleaning</h4>
+          <p>Detailed cleaning after construction, remodeling, dust removal, windows, floors, and surfaces.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="service-card">
+          <i class="bi bi-door-open-fill"></i>
+          <h4>Apartment Turnovers</h4>
+          <p>Move-out and turnover cleaning for property managers, apartments, and rental units.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="service-card">
+          <i class="bi bi-stars"></i>
+          <h4>Deep Cleaning</h4>
+          <p>Detailed cleaning of kitchens, bathrooms, baseboards, appliances, vents, surfaces, and more.</p>
+        </div>
+      </div>
+
+    </div>
   </div>
-
-  <div class="carousel-inner">
-
-    <div class="carousel-item active">
-      <img src="clean.gpt (2).jpeg" class="d-block w-100">
-    </div>
-
-    <div class="carousel-item">
-      <img src="clean.gpt.jpeg" class="d-block w-100">
-    </div>
-
-    <div class="carousel-item">
-      <img src="clean1.gpt.jpeg" class="d-block w-100">
-    </div>
-
-    <div class="carousel-item">
-      <img src="clean3.gpt.jpeg" class="d-block w-100">
-    </div>
-
-    <div class="carousel-item">
-      <img src="clean4.gpt.jpeg" class="d-block w-100">
-    </div>
-
-    <div class="carousel-item">
-      <img src="clean5.gpt.jpeg" class="d-block w-100">
-    </div>
-
-    <div class="carousel-item">
-      <img src="clean6.gpt.jpeg" class="d-block w-100">
-    </div>
-
-    <div class="carousel-item">
-      <img src="clean7.gpt.jpeg" class="d-block w-100">
-    </div>
-
-  </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#ourWorkCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-
-  <button class="carousel-control-next" type="button" data-bs-target="#ourWorkCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-
-</div>
 </section>
 
-            <p class="mt-3 lead">
-              Residential &amp; commercial cleaning in Willow Street, Lancaster City, Millersville,
-              Strasburg, Mountville and all nearby areas in Lancaster County, PA.
-            </p>
+<section class="dark-section">
+  <div class="container text-center">
+    <h2 class="section-title">Why Choose Lorenz Max Cleaning?</h2>
 
-            <p class="mt-2">
-              <strong>Servicios de limpieza profesional en todo el Condado de Lancaster, PA.</strong>
-              Limpieza profunda, regular, mudanzas, alfombras y más.
-            </p>
+    <div class="row g-4">
 
-            <div class="mt-4 d-flex flex-wrap gap-2">
-              <a href="#quote-form" class="btn btn-light btn-sm">Request a free quote</a>
-              <a href="contact.html" class="btn btn-outline-light btn-sm">View contact information</a>
-            </div>
-          </div>
-
-          <!-- Formulario -->
-          
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container text-center small">
-        Lorenz Max Cleaning LLC &copy; <span id="year"></span> – Professional Cleaning Services in Lancaster
-        County, PA.
+      <div class="col-md-3">
+        <h4>Reliable</h4>
+        <p>We show up on time and complete every job with care.</p>
       </div>
-    </footer>
 
-    <!-- WhatsApp floating button -->
-    <a
-      href="https://wa.me/12233614467?text=Hi,%20I%20would%20like%20a%20cleaning%20quote"
-      class="whatsapp-float"
-      target="_blank"
-      aria-label="Chat on WhatsApp"
-    >
-      <i class="bi bi-whatsapp"></i>
-    </a>
+      <div class="col-md-3">
+        <h4>Professional</h4>
+        <p>We provide quality service for residential and commercial clients.</p>
+      </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // año automático en el footer
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+      <div class="col-md-3">
+        <h4>Detailed</h4>
+        <p>We focus on the details that make your space look truly clean.</p>
+      </div>
+
+      <div class="col-md-3">
+        <h4>Local</h4>
+        <p>Serving Lancaster County and nearby areas.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="container">
+    <h2 class="section-title">Our Work</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <img class="work-img" src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=80" alt="Professional cleaning supplies">
+      </div>
+
+      <div class="col-md-4">
+        <img class="work-img" src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=900&q=80" alt="Cleaning service">
+      </div>
+
+      <div class="col-md-4">
+        <img class="work-img" src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=900&q=80" alt="Clean office">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="quote" class="dark-section">
+  <div class="container">
+    <div class="quote-box">
+      <h2 class="text-center mb-3">Request Your Free Quote</h2>
+      <p class="text-center mb-4">
+        Tell us about your space and we’ll reach out with a custom estimate.
+      </p>
+
+      <form action="https://formspree.io/f/mldqljbz" method="POST">
+
+        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+
+        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+
+        <input type="tel" name="phone" class="form-control" placeholder="Phone Number">
+
+        <select name="service" class="form-select" required>
+          <option value="">Select Service Needed</option>
+          <option>Residential Cleaning</option>
+          <option>Commercial Cleaning</option>
+          <option>Deep Cleaning</option>
+          <option>Move-In / Move-Out Cleaning</option>
+          <option>Carpet Cleaning</option>
+          <option>Post-Construction Cleaning</option>
+          <option>Apartment Turnover Cleaning</option>
+          <option>Other</option>
+        </select>
+
+        <textarea name="message" class="form-control" rows="5" placeholder="Tell us about your cleaning needs"></textarea>
+
+        <button type="submit" class="btn-main w-100 mt-2">Submit Request</button>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container text-center">
+    <h2 class="section-title">Contact Information</h2>
+
+    <p><strong>Lorenz Max Cleaning LLC</strong></p>
+    <p>Serving Lancaster County, PA and nearby areas</p>
+
+    <p>
+      <strong>Phone:</strong>
+      <a href="tel:12233614467">+1 (223) 361-4467</a>
+    </p>
+
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:lorenzmaxcleaning@gmail.com">lorenzmaxcleaning@gmail.com</a>
+    </p>
+
+    <p>
+      <strong>Website:</strong>
+      <a href="https://lorenzmaxcleaning.com">lorenzmaxcleaning.com</a>
+    </p>
+
+    <a href="tel:12233614467" class="btn-main">Call Now</a>
+    <a href="mailto:lorenzmaxcleaning@gmail.com" class="btn-main">Send Email</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Lorenz Max Cleaning LLC. All Rights Reserved.</p>
+  <p>Professional Residential & Commercial Cleaning Services</p>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/12233614467" target="_blank">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
