@@ -1,786 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#081d2c">
-<title>Lorenz Max Cleaning LLC | Professional Cleaning in Lancaster County, PA</title>
-<meta name="description" content="Professional commercial, residential, apartment turnover, carpet, hotel and post-construction cleaning services in Lancaster County, Pennsylvania.">
-<link rel="canonical" href="https://lorenzmaxcleaning.com/">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-:root{--navy:#081d2c;--gold:#e9bd76;--cream:#f8f6f1;--ink:#193343;--gray:#6b7d89}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:85px}
-body{margin:0;font-family:Manrope,Arial,sans-serif;color:var(--ink);line-height:1.7}
-a{text-decoration:none;color:inherit}
-img,video{display:block;max-width:100%}
-button,input,select,textarea{font:inherit}
-button{cursor:pointer}
-h1,h2,h3{line-height:1.17;letter-spacing:-.04em}
-h2{font-size:clamp(30px,4vw,50px)}
-em{font-style:normal;color:var(--gold)}
-.container{width:90%;max-width:1200px;margin:auto}
-section{padding:85px 0}
-.cream{background:var(--cream)}
-.dark{background:var(--navy);color:white}
-.eyebrow{color:#b58a4c;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
-.intro{max-width:760px;margin-bottom:40px}
-.intro p{color:var(--gray)}
-.dark .intro p{color:#c5d5df}
-
-.topbar{background:#051724;color:#d4e0e6;text-align:center;padding:9px;font-size:11px;letter-spacing:1px}
-header{background:white;position:sticky;top:0;z-index:100;box-shadow:0 3px 20px #0002}
-.navbar{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.brand{display:flex;align-items:center;gap:12px;font-size:17px;font-weight:800}
-.brand img{width:52px;height:52px;object-fit:contain}
-.brand small{display:block;color:#b48950;font-size:10px;letter-spacing:3px}
-nav{display:flex;gap:20px;align-items:center;font-size:13px;font-weight:800}
-nav a:hover{color:#b48950}
-.menu-btn{display:none;border:0;background:none;font-size:28px}
-.btn{display:inline-block;padding:15px 24px;background:var(--gold);color:var(--navy);font-size:13px;font-weight:800;border:1px solid transparent;text-align:center;transition:.2s}
-.btn:hover{background:#f5d798;transform:translateY(-2px)}
-.btn-outline{background:transparent;color:white;border-color:white}
-.btn-outline:hover{background:#ffffff20}
-.btn-navy{background:var(--navy);color:white}
-
-/* PROFESSIONAL COVER IMAGE */
-.hero{
-min-height:680px;
-display:flex;
-align-items:center;
-color:white;
-background:
-linear-gradient(90deg,#061b2af8,#061b2ad2 50%,#061b2a45),
-url("hero-commercial.webp") center/cover no-repeat;
-}
-.hero h1{font-size:clamp(42px,6vw,84px);max-width:900px;margin:25px 0}
-.hero p{max-width:630px;font-size:17px;color:#dce8ee}
-.hero .eyebrow{color:var(--gold)}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.hero-note{font-size:11px;letter-spacing:1px;margin-top:48px;color:#d4e0e6}
-
-.trust{padding:30px 0;border-bottom:1px solid #e3e9ed}
-.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
-.trust strong{display:block;font-size:13px}
-.trust span{display:block;color:var(--gray);font-size:11px}
-
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:white;border:1px solid #e5e9ed;padding:33px;min-height:255px;transition:.2s}
-.card:hover{transform:translateY(-5px);box-shadow:0 14px 30px #0001}
-.card .symbol{font-size:35px;color:#b78b50}
-.card h3{font-size:21px;margin:18px 0 10px}
-.card p{font-size:14px;color:var(--gray)}
-
-.about{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
-.about img{width:100%;height:450px;object-fit:cover}
-.about p{color:var(--gray)}
-.benefits{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:26px 0;font-size:13px;font-weight:800}
-.benefits span:before{content:"✓ ";color:#b58a4c}
-
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.gallery button{aspect-ratio:1;padding:0;border:0;background:#173a50;overflow:hidden}
-.gallery img{width:100%;height:100%;object-fit:cover;transition:.3s}
-.gallery button:hover img{transform:scale(1.05)}
-.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:60px;padding-top:40px;border-top:1px solid #3b5668}
-.video-grid video{width:100%;max-height:350px;background:black}
-.video-grid p{color:#c8d8e1}
-
-.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.review{padding:30px;background:white;border:1px solid #e5e9ed}
-.stars{color:#c99b53;font-size:22px}
-.review p{color:#637985;font-size:14px}
-.review small{display:block;color:#80919a}
-.review-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.step{background:white;border:1px solid #e5e9ed;padding:26px}
-.step b{font-size:28px;color:#b88d50}
-.step p{color:var(--gray);font-size:14px}
-
-.cta{background:#11364d;color:white;text-align:center}
-.cta p{color:#d1e0e8}
-
-.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px}
-.contact-info p{color:var(--gray)}
-.contact-line{border-bottom:1px solid #e3e9ed;padding:17px 0}
-.contact-line small{display:block;color:#b48a4c;font-size:11px;font-weight:800}
-.contact-line a{font-weight:800;overflow-wrap:anywhere}
-.form-card{border:1px solid #e1e8ec;padding:35px;background:white;box-shadow:0 15px 45px #0001}
-.form-card p{font-size:14px;color:var(--gray)}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-input,select,textarea{width:100%;padding:14px;margin-bottom:13px;border:1px solid #dae3e7;background:#fafbfb}
-textarea{resize:vertical}
-.form-card button{width:100%}
-
-footer{background:#061724;color:#d0dce2;padding:60px 0 25px}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.3fr;gap:45px}
-.footer-grid h3{color:white}
-.footer-grid p,.footer-grid a{font-size:13px}
-.footer-grid a{display:block;margin:8px 0}
-.copyright{border-top:1px solid #304758;margin-top:35px;padding-top:20px;font-size:12px}
-
-.whatsapp{position:fixed;right:20px;bottom:20px;width:58px;height:58px;background:#25d366;color:white;border-radius:50%;display:grid;place-items:center;font-size:28px;z-index:200;box-shadow:0 7px 22px #0004}
-dialog{border:0;background:#061724;max-width:95vw;max-height:95vh;padding:12px}
-dialog::backdrop{background:#000c}
-dialog img{max-width:90vw;max-height:80vh;object-fit:contain}
-.close{position:absolute;right:8px;top:8px;border:0;background:white;font-size:24px;padding:4px 12px}
-
-@media(max-width:900px){
-.nav-quote{display:none}
-.cards,.reviews{grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:760px){
-.menu-btn{display:block}
-nav{display:none;position:absolute;top:100%;left:0;right:0;background:white;padding:20px;flex-direction:column;align-items:stretch;box-shadow:0 15px 25px #0002}
-nav.open{display:flex}
-.brand{font-size:14px}
-.brand img{width:42px;height:42px}
-.hero{min-height:620px;background-position:60% center}
-.hero h1{font-size:clamp(42px,9vw,62px)}
-.hero-actions{flex-direction:column}
-section{padding:65px 0}
-.trust-grid{grid-template-columns:repeat(2,1fr)}
-.about,.contact-grid,.video-grid{grid-template-columns:1fr;gap:35px}
-.about img{height:320px}
-.gallery{grid-template-columns:repeat(2,1fr)}
-.steps{grid-template-columns:repeat(2,1fr)}
-.form-row{grid-template-columns:1fr;gap:0}
-.footer-grid{grid-template-columns:1fr;gap:20px}
-}
-@media(max-width:550px){
-.cards,.reviews{grid-template-columns:1fr}
-.hero h1{font-size:43px}
-.form-card{padding:23px}
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c2036">
+  <title>Lorenz Max Cleaning LLC | Residential, Commercial & Post-Construction Cleaning</title>
+  <meta name="description" content="Lorenz Max Cleaning LLC delivers professional commercial, residential, apartment turnover, carpet and post-construction cleaning in Lancaster County, Pennsylvania.">
+  <link rel="canonical" href="https://lorenzmaxcleaning.com/">
+  <link rel="icon" href="https://raw.githubusercontent.com/lorenzmaxcleaning/lorenzmaxcleaning-site/main/logo_transparent.png" type="image/png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lorenz Max Cleaning LLC | Excellence in Every Clean">
+  <meta property="og:description" content="Professional cleaning for homes, businesses and post-construction projects in Lancaster County, PA.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/lorenzmaxcleaning/lorenzmaxcleaning-site/main/clean4.gpt.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --navy:#0c2036; --navy2:#142f4a; --gold:#dbb56d; --gold2:#f2d39a; --ink:#193047; --muted:#617286; --cream:#f8f7f3; --line:#e5e9ec; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:90px; }
+    body { margin:0; font-family:Manrope,Arial,sans-serif; color:var(--ink); line-height:1.65; }
+    img { max-width:100%; display:block; }
+    a { color:inherit; text-decoration:none; }
+    button,input,select,textarea { font:inherit; }
+    button { cursor:pointer; }
+    .container { width:min(1160px,90%); margin:0 auto; }
+    .section { padding:88px 0; }
+    .section-light { background:var(--cream); }
+    .eyebrow { color:#a37a37; font-size:12px; font-weight:800; letter-spacing:.18em; text-transform:uppercase; }
+    h1,h2,h3,p { margin-top:0; }
+    h1,h2,h3 { line-height:1.18; }
+    h2 { font-size:clamp(30px,4.5vw,52px); letter-spacing:-.035em; margin:12px 0 18px; }
+    p { color:var(--muted); }
+    .lead { max-width:700px; margin-bottom:34px; }
+    .accent { color:var(--gold); }
+    .topbar { background:#081a2b; color:#e9e7e3; text-align:center; font-size:11px; letter-spacing:.08em; padding:9px 12px; }
+    header { background:#fff; position:sticky; top:0; z-index:20; box-shadow:0 5px 22px #12274212; }
+    .navline { min-height:95px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { display:flex; gap:12px; align-items:center; min-width:0; }
+    .brand img { width:76px; height:76px; object-fit:contain; }
+    .brand-copy { font-size:16px; font-weight:800; letter-spacing:.015em; line-height:1.2; white-space:nowrap; }
+    .brand-copy small { display:block; color:#ab824a; font-size:10px; letter-spacing:.22em; margin-top:5px; }
+    nav { display:flex; align-items:center; gap:22px; }
+    nav a { font-weight:800; font-size:13px; }
+    nav a:hover { color:#aa7e3e; }
+    .menu-button { display:none; border:0; background:transparent; color:var(--navy); font-size:28px; padding:8px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; border:1px solid transparent; border-radius:6px; padding:15px 23px; font-size:13px; font-weight:800; background:var(--gold); color:var(--navy); transition:transform .2s,background .2s; }
+    .btn:hover { transform:translateY(-2px); background:var(--gold2); }
+    .btn-outline { border-color:#e9f0f5; background:transparent; color:#fff; }
+    .btn-outline:hover { background:#ffffff20; }
+    .btn-navy { background:var(--navy); color:#fff; }
+    .btn-navy:hover { background:var(--navy2); }
+    .hero { color:white; background:linear-gradient(90deg,rgba(5,22,40,.94),rgba(8,28,47,.78) 58%,rgba(8,28,47,.3)),url('https://raw.githubusercontent.com/lorenzmaxcleaning/lorenzmaxcleaning-site/main/clean4.gpt.jpeg') center 52%/cover no-repeat; min-height:640px; display:flex; align-items:center; }
+    .hero-inner { padding:90px 0; }
+    .hero .eyebrow { color:var(--gold2); }
+    .hero h1 { font-size:clamp(40px,6vw,76px); max-width:840px; letter-spacing:-.045em; margin:18px 0 25px; }
+    .hero p { color:#e4ecf3; font-size:clamp(15px,2vw,19px); max-width:670px; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+    .hero-note { margin-top:36px; color:#d4dce6; text-transform:uppercase; letter-spacing:.1em; font-size:11px; }
+    .trust { border-bottom:1px solid var(--line); padding:32px 0; background:#fff; }
+    .trust-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:25px; text-align:center; }
+    .trust strong { display:block; font-size:14px; }
+    .trust span { font-size:12px; color:var(--muted); }
+    .services { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+    .service { background:white; border:1px solid var(--line); border-radius:10px; padding:30px; }
+    .service .symbol { color:#b58c54; font-size:29px; }
+    .service h3 { margin:16px 0 10px; font-size:20px; }
+    .service p { margin:0; font-size:14px; }
+    .about { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:60px; }
+    .about-photo { width:100%; height:470px; border-radius:12px; object-fit:cover; }
+    .benefits { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:24px 0 30px; font-weight:800; font-size:13px; }
+    .benefits span::before { content:'✓'; color:#a88147; margin-right:8px; }
+    .work { background:var(--navy); color:white; }
+    .work .lead p { color:#b8c9d6; }
+    .gallery { display:grid; grid-template-columns:repeat(4,1fr); gap:13px; }
+    .gallery button { padding:0; border:0; border-radius:9px; overflow:hidden; aspect-ratio:1; background:#244157; }
+    .gallery img { width:100%; height:100%; object-fit:cover; transition:transform .25s; }
+    .gallery button:hover img { transform:scale(1.04); }
+    .gallery-note { font-size:12px; margin:20px 0 0; color:#b8c9d6; }
+    .review-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .review { padding:27px; background:#fff; border:1px solid var(--line); border-radius:10px; }
+    .stars { color:#bb944e; font-size:22px; letter-spacing:.07em; }
+    .review p { font-size:14px; margin:12px 0 18px; }
+    .review strong { font-size:14px; }
+    .review small { display:block; font-size:11px; color:var(--muted); }
+    .review-actions { display:flex; gap:13px; flex-wrap:wrap; margin-top:28px; }
+    .steps { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+    .step { padding:26px; border:1px solid var(--line); border-radius:10px; background:white; }
+    .step b { font-size:29px; color:#b88a47; }
+    .step h3 { font-size:18px; margin:14px 0 8px; }
+    .step p { font-size:13px; margin:0; }
+    .cta { text-align:center; background:#193b56; color:white; }
+    .cta p { color:#d4e0e9; }
+    .contact { display:grid; grid-template-columns:1fr 1.15fr; gap:55px; }
+    .contact-detail { border-bottom:1px solid var(--line); padding:14px 0; }
+    .contact-detail small { display:block; font-size:11px; font-weight:800; color:#a17a41; letter-spacing:.08em; }
+    .contact-detail a, .contact-detail strong { font-weight:800; overflow-wrap:anywhere; }
+    .form-box { border:1px solid var(--line); border-radius:12px; padding:30px; box-shadow:0 15px 40px #132b4110; }
+    .form-box p { font-size:13px; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    input,select,textarea { width:100%; padding:13px; border:1px solid #d6e0e5; border-radius:5px; background:#fcfdfd; margin-bottom:13px; color:var(--ink); }
+    textarea { resize:vertical; }
+    .form-box button { width:100%; }
+    footer { background:#071a2a; color:#d5e0e8; padding:60px 0 25px; }
+    .footer-grid { display:grid; grid-template-columns:2fr 1fr 1.25fr; gap:40px; }
+    footer h3 { color:#fff; font-size:17px; }
+    footer p,footer a { color:#c9d6df; font-size:13px; }
+    footer a { display:block; margin:8px 0; }
+    .footer-logo { width:115px; height:115px; object-fit:contain; margin-bottom:12px; }
+    .copyright { border-top:1px solid #30485c; padding-top:22px; margin-top:34px; font-size:12px; }
+    .whatsapp { position:fixed; right:18px; bottom:18px; z-index:40; background:#25d366; color:#062d16; padding:15px 18px; border-radius:40px; font-weight:800; box-shadow:0 8px 25px #0005; }
+    dialog { padding:10px; border:0; border-radius:10px; max-width:95vw; max-height:95vh; background:#0a1c2a; }
+    dialog::backdrop { background:#000d; }
+    dialog img { max-height:83vh; max-width:90vw; object-fit:contain; }
+    .close-photo { position:absolute; right:12px; top:12px; background:white; border:0; border-radius:5px; padding:4px 12px; font-size:23px; }
+    @media(max-width:920px) { .services,.review-grid { grid-template-columns:repeat(2,1fr); } nav { gap:12px; } .nav-quote { display:none; } }
+    @media(max-width:760px) {
+      .navline { min-height:82px; } .brand img { width:61px; height:61px; } .brand-copy { font-size:14px; }
+      nav { display:none; position:absolute; top:100%; left:0; right:0; flex-direction:column; align-items:stretch; padding:20px 6%; background:white; box-shadow:0 14px 24px #0002; }
+      nav.open { display:flex; } .menu-button { display:block; }
+      .hero { min-height:610px; background-position:center; } .hero-inner { padding:78px 0; }
+      .hero h1 { font-size:clamp(39px,9vw,59px); } .hero-actions { flex-direction:column; align-items:flex-start; }
+      .trust-grid { grid-template-columns:repeat(2,1fr); } .about,.contact { grid-template-columns:1fr; gap:30px; }
+      .about-photo { height:320px; } .gallery { grid-template-columns:repeat(2,1fr); }
+      .steps { grid-template-columns:repeat(2,1fr); } .footer-grid { grid-template-columns:1fr; gap:20px; }
+      .section { padding:65px 0; }
+    }
+    @media(max-width:520px) { .services,.review-grid,.form-row { grid-template-columns:1fr; } .hero h1 { font-size:42px; } .form-box { padding:22px; } }
+  </style>
 </head>
-
 <body>
-
-<div class="topbar">
-LANCASTER COUNTY, PENNSYLVANIA • COMMERCIAL &amp; RESIDENTIAL CLEANING
-</div>
-
-<header>
-<div class="container navbar">
-
-<a class="brand" href="#home">
-<img src="lorenz-max-logo.png" alt="Lorenz Max Cleaning logo">
-<span>LORENZ MAX<small>CLEANING LLC</small></span>
-</a>
-
-<nav id="menu">
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#work">Our Work</a>
-<a href="#reviews">Reviews</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
-<a class="btn nav-quote" href="#contact">Get a Free Quote ↗️</a>
-
-</div>
-</header>
-
-<main>
-
-<!-- PROFESSIONAL PHOTO AT THE TOP -->
-
-<section class="hero" id="home">
-<div class="container">
-
-<div class="eyebrow">DETAIL-DRIVEN CLEANING, ELEVATED</div>
-
-<h1>
-Exceptional spaces start with
-<em>exceptional care.</em>
-</h1>
-
-<p>
-Professional commercial, residential,
-and post-construction cleaning for homes,
-businesses, apartments and facilities
-throughout Lancaster County, Pennsylvania.
-</p>
-
-<div class="hero-actions">
-<a class="btn" href="#contact">Request a Free Estimate ↗️</a>
-<a class="btn btn-outline" href="#services">Explore Our Services ↗️</a>
-</div>
-
-<div class="hero-note">
-BASED IN WILLOW STREET, PA • SERVING LANCASTER COUNTY
-</div>
-
-</div>
-</section>
-
-<!-- COMPANY HIGHLIGHTS -->
-
-<div class="trust">
-<div class="container trust-grid">
-
-<div>
-<strong>✦ Detail-Focused Service</strong>
-<span>Every corner matters</span>
-</div>
-
-<div>
-<strong>◇ Flexible Scheduling</strong>
-<span>Built around your needs</span>
-</div>
-
-<div>
-<strong>✧ Homes &amp; Businesses</strong>
-<span>One partner, many spaces</span>
-</div>
-
-<div>
-<strong>⌁ English &amp; Español</strong>
-<span>Clear communication</span>
-</div>
-
-</div>
-</div>
-
-<!-- CLEANING SERVICES -->
-
-<section class="cream" id="services">
-<div class="container">
-
-<div class="intro">
-<div class="eyebrow">OUR SERVICES</div>
-
-<h2>
-Professional cleaning.<br>
-<em>Exceptional results.</em>
-</h2>
-
-<p>
-Customized cleaning services for homes,
-offices, apartment communities,
-hotels and construction projects.
-</p>
-</div>
-
-<div class="cards">
-
-<article class="card">
-<div class="symbol">▦</div>
-<h3>Commercial &amp; Office Cleaning</h3>
-<p>
-Office cleaning, restrooms, lobbies,
-break rooms, conference rooms,
-floors and common areas.
-</p>
-</article>
-
-<article class="card">
-<div class="symbol">✦</div>
-<h3>Post-Construction Cleaning</h3>
-<p>
-Rough cleaning, final cleaning,
-construction dust removal,
-windows, floors and detailed finishing.
-</p>
-</article>
-
-<article class="card">
-<div class="symbol">◇</div>
-<h3>Apartment Turnovers</h3>
-<p>
-Move-in and move-out cleaning for
-apartments, rental units and
-property managers.
-</p>
-</article>
-
-<article class="card">
-<div class="symbol">⌂</div>
-<h3>Residential &amp; Deep Cleaning</h3>
-<p>
-Regular housekeeping, deep cleaning,
-kitchens, bathrooms and
-recurring cleaning plans.
-</p>
-</article>
-
-<article class="card">
-<div class="symbol">▤</div>
-<h3>Carpet &amp; Floor Care</h3>
-<p>
-Carpet cleaning for homes, offices,
-apartments, hallways and
-high-traffic areas.
-</p>
-</article>
-
-<article class="card">
-<div class="symbol">▥</div>
-<h3>Hotel Housekeeping Support</h3>
-<p>
-Hotel room cleaning, common areas,
-housekeeping support and
-special deep-cleaning projects.
-</p>
-</article>
-
-</div>
-</div>
-</section>
-
-<!-- ABOUT LORENZ MAX -->
-
-<section id="about">
-<div class="container about">
-
-<img src="photos/project-6570.webp" alt="Lorenz Max Cleaning project" loading="lazy">
-
-<div>
-<div class="eyebrow">ABOUT OUR COMPANY</div>
-
-<h2>
-Clean is the standard.<br>
-<em>Excellence is the goal.</em>
-</h2>
-
-<p>
-Lorenz Max Cleaning LLC provides dependable
-cleaning services for homeowners,
-businesses, property managers
-and construction projects.
-</p>
-
-<p>
-We focus on attention to detail,
-professional service and clear
-communication with every client.
-</p>
-
-<div class="benefits">
-<span>Customized plans</span>
-<span>Detailed cleaning</span>
-<span>Flexible scheduling</span>
-<span>Clear communication</span>
-</div>
-
-<a class="btn btn-navy" href="#contact">Request Your Estimate ↗️</a>
-</div>
-
-</div>
-</section>
-
-<!-- YOUR 28 ORIGINAL PHOTOS -->
-
-<section class="dark" id="work">
-<div class="container">
-
-<div class="intro">
-<div class="eyebrow">OUR WORK</div>
-
-<h2>
-Real projects.<br>
-<em>Real dedication.</em>
-</h2>
-
-<p>
-Explore photographs from our
-cleaning projects and team.
-Click to enlarge any picture.
-</p>
-</div>
-
-<div class="gallery" id="gallery"></div>
-
-<p style="font-size:12px;color:#c7d8e0;margin-top:20px;">
-Some photographs show work in progress.
-</p>
-
-<!-- PROJECT VIDEO -->
-
-<div class="video-grid">
-
-<div>
-<div class="eyebrow">BEHIND THE SCENES</div>
-<h2>See our work in action.</h2>
-<p>Watch a walkthrough from a post-construction cleaning environment.</p>
-</div>
-
-<video controls preload="metadata" poster="photos/construction-video-poster.jpg">
-<source src="photos/construction-walkthrough.mp4" type="video/mp4">
-Your browser does not support video.
-</video>
-
-</div>
-</div>
-</section>
-
-<!-- CUSTOMER REVIEWS -->
-
-<section id="reviews">
-<div class="container">
-
-<div class="intro">
-<div class="eyebrow">CUSTOMER EXPERIENCES</div>
-
-<h2>
-Customer satisfaction<br>
-<em>matters to us.</em>
-</h2>
-
-<p>
-Read summaries of customer feedback
-and explore our online business profiles.
-</p>
-</div>
-
-<div class="reviews">
-
-<article class="review">
-<div class="stars">★★★★★</div>
-<p>
-Customer feedback highlighting
-punctuality, careful work
-and attention to detail.
-</p>
-<strong>Kenneth M.</strong>
-<small>HomeAdvisor • February 2026 • Summary</small>
-</article>
-
-<article class="review">
-<div class="stars">★★★★★</div>
-<p>
-Customer feedback recognizing
-professionalism, communication
-and thorough cleaning.
-</p>
-<strong>Rocio L.</strong>
-<small>HomeAdvisor • December 2025 • Summary</small>
-</article>
-
-<article class="review">
-<div class="stars">★★★★★</div>
-<p>
-Positive customer feedback about
-carpet cleaning results and
-professional service.
-</p>
-<strong>Yulesy D.</strong>
-<small>HomeAdvisor • December 2025 • Summary</small>
-</article>
-
-</div>
-
-<div class="review-links">
-
-<a class="btn btn-navy" href="https://www.homeadvisor.com/rated.LorenzMaxCleaning.159709926.html" target="_blank" rel="noopener noreferrer">
-HomeAdvisor Reviews ↗️
-</a>
-
-<a class="btn btn-navy" href="https://www.google.com/maps/search/?api=1&amp;query=Lorenz+Max+Cleaning+Willow+Street+PA" target="_blank" rel="noopener noreferrer">
-Google Business Reviews ↗️
-</a>
-
-</div>
-</div>
-</section>
-
-<!-- OUR PROCESS -->
-
-<section class="cream">
-<div class="container">
-
-<div class="intro">
-<div class="eyebrow">OUR PROCESS</div>
-
-<h2>
-Simple process.<br>
-<em>Professional service.</em>
-</h2>
-</div>
-
-<div class="steps">
-
-<div class="step">
-<b>01</b>
-<h3>Contact Us</h3>
-<p>Tell us about the cleaning you need.</p>
-</div>
-
-<div class="step">
-<b>02</b>
-<h3>Review the Scope</h3>
-<p>We discuss your property and schedule.</p>
-</div>
-
-<div class="step">
-<b>03</b>
-<h3>Receive an Estimate</h3>
-<p>We prepare a quote for your requirements.</p>
-</div>
-
-<div class="step">
-<b>04</b>
-<h3>Professional Cleaning</h3>
-<p>Our team works with care and attention.</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- FREE ESTIMATE BANNER -->
-
-<section class="cta">
-<div class="container">
-
-<div class="eyebrow">LET'S GET STARTED</div>
-
-<h2>Ready for a cleaner space?</h2>
-
-<p>Contact Lorenz Max Cleaning LLC for your free estimate.</p>
-
-<a class="btn" href="#contact">Get Your Free Quote ↗️</a>
-
-</div>
-</section>
-
-<!-- CONTACT AND ESTIMATE FORM -->
-
-<section id="contact">
-<div class="container contact-grid">
-
-<div class="contact-info">
-<div class="eyebrow">CONTACT US</div>
-
-<h2>
-Your next clean<br>
-<em>starts here.</em>
-</h2>
-
-<p>
-Contact our team about residential,
-commercial or post-construction cleaning.
-</p>
-
-<div class="contact-line">
-<small>PHONE</small>
-<a href="tel:+12233614467">(223) 361-4467</a>
-</div>
-
-<div class="contact-line">
-<small>EMAIL</small>
-<a href="mailto:lorenzmaxcleaning@gmail.com">lorenzmaxcleaning@gmail.com</a>
-</div>
-
-<div class="contact-line">
-<small>LOCATION</small>
-<strong>Willow Street, Lancaster County, PA</strong>
-</div>
-
-<div class="contact-line">
-<small>WHATSAPP</small>
-<a href="https://wa.me/12233614467" target="_blank" rel="noopener noreferrer">Message Us ↗️</a>
-</div>
-
-</div>
-
-<div class="form-card">
-
-<h3>Request a Free Quote</h3>
-
-<p>
-Complete the form and we'll contact
-you about your cleaning needs.
-</p>
-
-<form action="https://formspree.io/f/mldqljbz" method="POST">
-
-<input type="hidden" name="_subject" value="New Lorenz Max Cleaning Quote Request">
-
-<div class="form-row">
-
-<input name="name" type="text" placeholder="Full Name *" required>
-
-<input name="phone" type="tel" placeholder="Phone Number *" required>
-
-</div>
-
-<input name="email" type="email" placeholder="Email Address *" required>
-
-<select name="service" required>
-<option value="">Select Service Needed *</option>
-<option>Residential Cleaning</option>
-<option>Commercial Cleaning</option>
-<option>Deep Cleaning</option>
-<option>Apartment Turnovers</option>
-<option>Post-Construction Cleaning</option>
-<option>Carpet Cleaning</option>
-<option>Hotel Housekeeping</option>
-<option>Move-In / Move-Out</option>
-<option>Other</option>
-</select>
-
-<div class="form-row">
-
-<select name="frequency">
-<option value="">Cleaning Frequency</option>
-<option>One Time</option>
-<option>Daily</option>
-<option>Weekly</option>
-<option>Biweekly</option>
-<option>Monthly</option>
-</select>
-
-<input name="location" type="text" placeholder="City / Area">
-
-</div>
-
-<textarea name="message" rows="5" placeholder="Tell us about your property and cleaning needs"></textarea>
-
-<button class="btn" type="submit">Submit Quote Request ↗️</button>
-
-</form>
-
-</div>
-</div>
-</section>
-
-</main>
-
-<!-- FOOTER -->
-
-<footer>
-<div class="container footer-grid">
-
-<div>
-<h3>LORENZ MAX CLEANING LLC</h3>
-<p>
-Commercial, residential and
-post-construction cleaning
-in Lancaster County, Pennsylvania.
-</p>
-<p>Professional care. Noticeable results.</p>
-</div>
-
-<div>
-<h3>Explore</h3>
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#work">Our Work</a>
-<a href="#reviews">Reviews</a>
-</div>
-
-<div>
-<h3>Contact</h3>
-<a href="tel:+12233614467">(223) 361-4467</a>
-<a href="mailto:lorenzmaxcleaning@gmail.com">Email Us</a>
-<a href="#contact">Free Estimate</a>
-</div>
-
-</div>
-
-<div class="container copyright">
-© <span id="year">2026</span> Lorenz Max Cleaning LLC. All Rights Reserved.
-</div>
-</footer>
-
-<!-- WHATSAPP BUTTON -->
-
-<a class="whatsapp" href="https://wa.me/12233614467" target="_blank" rel="noopener noreferrer" aria-label="Contact on WhatsApp">✆</a>
-
-<!-- PHOTO VIEWER -->
-
-<dialog id="lightbox">
-<button class="close" id="closePhoto" type="button" aria-label="Close photo">×</button>
-<img id="largePhoto" alt="Cleaning project photo">
-</dialog>
-
-<!-- JAVASCRIPT -->
-
-<script>
-
-// Automatic copyright year
-
-document.getElementById("year").textContent = new Date().getFullYear();
-
-// Mobile navigation menu
-
-const menu = document.getElementById("menu");
-const menuBtn = document.getElementById("menuBtn");
-
-menuBtn.addEventListener("click", () => {
-  const open = menu.classList.toggle("open");
-  menuBtn.setAttribute("aria-expanded", String(open));
-});
-
-document.querySelectorAll("nav a").forEach(link => {
-  link.addEventListener("click", () => {
-    menu.classList.remove("open");
-    menuBtn.setAttribute("aria-expanded", "false");
-  });
-});
-
-// Your 28 original project photographs
-
-const photos = [
-"8971","8970","7308","7316",
-"6708","8784","8849","8852",
-"6570","6654","6653","7528",
-"7524","7529","7536","7717",
-"7713","7711","7710","9918",
-"9917","9919","9887","9889",
-"9840","9832","9830","9831"
-];
-
-// Create gallery automatically
-
-const gallery = document.getElementById("gallery");
-const lightbox = document.getElementById("lightbox");
-const largePhoto = document.getElementById("largePhoto");
-
-photos.forEach((id, index) => {
-
-  const button = document.createElement("button");
-  const img = document.createElement("img");
-
-  button.type = "button";
-  button.setAttribute("aria-label", "Open project photo " + (index + 1));
-
-  img.src = "photos/project-" + id + ".webp";
-  img.alt = "Lorenz Max Cleaning project photo " + (index + 1);
-  img.loading = "lazy";
-
-  button.appendChild(img);
-
-  button.addEventListener("click", () => {
-    largePhoto.src = img.src;
-    lightbox.showModal();
-  });
-
-  gallery.appendChild(button);
-
-});
-
-// Close photo viewer
-
-document.getElementById("closePhoto").addEventListener("click", () => {
-  lightbox.close();
-});
-
-lightbox.addEventListener("click", event => {
-  if (event.target === lightbox) {
-    lightbox.close();
-  }
-});
-
-</script>
-
+  <div class="topbar">LANCASTER COUNTY, PENNSYLVANIA • COMMERCIAL &amp; RESIDENTIAL CLEANING</div>
+  <header>
+    <div class="container navline">
+      <a class="brand" href="#home" aria-label="Lorenz Max Cleaning Home">
+        <img src="https://raw.githubusercontent.com/lorenzmaxcleaning/lorenzmaxcleaning-site/main/logo_transparent.png" alt="Lorenz Max Cleaning official gold and navy logo" width="76" height="76">
+        <span class="brand-copy">LORENZ MAX<small>CLEANING LLC</small></span>
+      </a>
+      <nav id="navMenu" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#work">Our Work</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="btn nav-quote" href="#contact">Free Estimate</a>
+      <button class="menu-button" id="menuButton" aria-controls="navMenu" aria-expanded="false" aria-label="Open navigation menu" type="button">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="eyebrow">PROFESSIONAL CLEANING SERVICES</div>
+        <h1>Excellence in <span class="accent">Every Clean.</span></h1>
+        <p>Reliable residential, commercial and post-construction cleaning tailored to your property. Experience professional care, attention to detail and results you can see.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">Request a Free Estimate</a>
+          <a class="btn btn-outline" href="tel:+12233614467">Call Us</a>
+        </div>
+        <div class="hero-note">WILLOW STREET, PA • SERVING LANCASTER COUNTY</div>
+      </div>
+    </section>
+    <div class="trust">
+      <div class="container trust-grid">
+        <div><strong>✦ Detail-Focused</strong><span>Quality in every space</span></div>
+        <div><strong>◇ Flexible Scheduling</strong><span>Service around your needs</span></div>
+        <div><strong>⌂ Homes &amp; Businesses</strong><span>Complete cleaning solutions</span></div>
+        <div><strong>✓ English &amp; Español</strong><span>Clear communication</span></div>
+      </div>
+    </div>
+    <section class="section section-light" id="services">
+      <div class="container">
+        <div class="lead"><div class="eyebrow">OUR SERVICES</div><h2>Professional cleaning. <span class="accent">Exceptional results.</span></h2><p>Customized cleaning services for homes, offices, apartments, hotels and construction projects.</p></div>
+        <div class="services">
+          <article class="service"><div class="symbol">▦</div><h3>Commercial &amp; Office Cleaning</h3><p>Offices, restrooms, lobbies, common areas, break rooms and floor care.</p></article>
+          <article class="service"><div class="symbol">✧</div><h3>Post-Construction Cleaning</h3><p>Rough and final cleaning, dust removal, windows, floors and finishing details.</p></article>
+          <article class="service"><div class="symbol">⌂</div><h3>Apartment Turnovers</h3><p>Move-in, move-out and turnover cleaning for rentals and property managers.</p></article>
+          <article class="service"><div class="symbol">✦</div><h3>Residential &amp; Deep Cleaning</h3><p>Routine housekeeping, deep cleaning, kitchens, bathrooms and recurring plans.</p></article>
+          <article class="service"><div class="symbol">▤</div><h3>Carpet &amp; Floor Care</h3><p>Carpet and floor cleaning for homes, apartments, offices and facilities.</p></article>
+          <article class="service"><div class="symbol">▥</div><h3>Hotel Housekeeping</h3><p>Room cleaning, public areas, housekeeping support and special projects.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="about">
+      <div class="container about">
+        <img class="about-photo" src="https://raw.githubusercontent.com/lorenzmaxcleaning/lorenzmaxcleaning-site/main/clean.gpt.jpeg" alt="Commercial interior cleaned by Lorenz Max Cleaning" loading="lazy">
+        <div><div class="eyebrow">ABOUT OUR COMPANY</div><h2>Clean is the standard. <span class="accent">Excellence is the goal.</span></h2>
+          <p>Lorenz Max Cleaning LLC provides dependable cleaning for homeowners, businesses, property managers and post-construction projects.</p>
+          <p>We focus on attention to detail, reliable service and clear communication at every visit.</p>
+          <div class="benefits"><span>Customized plans</span><span>Detailed cleaning</span><span>Flexible scheduling</span><span>Professional care</span></div>
+          <a class="btn btn-navy" href="#contact">Request Your Estimate</a>
+        </div>
+      </div>
+    </section>
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="lead"><div class="eyebrow">OUR WORK</div><h2>Real projects. <span class="accent">Real dedication.</span></h2><p>Browse photographs of our cleaning projects and team. Select a photo to view it larger.</p></div>
+        <div class="gallery" id="gallery"></div>
+        <p class="gallery-note">Some photographs show cleaning in progress.</p>
+      </div>
+    </section>
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="lead"><div class="eyebrow">CUSTOMER EXPERIENCES</div><h2>Customer satisfaction <span class="accent">matters to us.</span></h2><p>Explore customer feedback and visit our business profiles for more information.</p></div>
+        <div class="review-grid">
+          <article class="review"><div class="stars">★★★★★</div><p>Customer feedback highlighting punctuality, careful work and attention to detail.</p><strong>Kenneth M.</strong><small>HomeAdvisor • February 2026 • Summary</small></article>
+          <article class="review"><div class="stars">★★★★★</div><p>Customer feedback recognizing professionalism, communication and thorough cleaning.</p><strong>Rocio L.</strong><small>HomeAdvisor • December 2025 • Summary</small></article>
+          <article class="review"><div class="stars">★★★★★</div><p>Positive feedback about carpet cleaning results and professional service.</p><strong>Yulesy D.</strong><small>HomeAdvisor • December 2025 • Summary</small></article>
+        </div>
+        <div class="review-actions">
+          <a class="btn btn-navy" href="https://www.google.com/maps/search/?api=1&amp;query=Lorenz+Max+Cleaning+Willow+Street+PA" target="_blank" rel="noopener noreferrer">See Google Reviews</a>
+          <a class="btn btn-navy" href="https://www.homeadvisor.com/rated.LorenzMaxCleaning.159709926.html" target="_blank" rel="noopener noreferrer">See HomeAdvisor Reviews</a>
+        </div>
+      </div>
+    </section>
+    <section class="section section-light" id="process">
+      <div class="container">
+        <div class="lead"><div class="eyebrow">HOW IT WORKS</div><h2>Simple process. <span class="accent">Professional service.</span></h2></div>
+        <div class="steps">
+          <div class="step"><b>01</b><h3>Contact Us</h3><p>Tell us what cleaning services you need.</p></div>
+          <div class="step"><b>02</b><h3>Review the Scope</h3><p>We discuss your property and schedule.</p></div>
+          <div class="step"><b>03</b><h3>Receive an Estimate</h3><p>We prepare a quote based on your needs.</p></div>
+          <div class="step"><b>04</b><h3>Professional Cleaning</h3><p>Our team works with care and attention.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="section cta"><div class="container"><div class="eyebrow">LET'S GET STARTED</div><h2>Ready for a cleaner space?</h2><p>Contact Lorenz Max Cleaning LLC for your free estimate.</p><a class="btn" href="#contact">Get Your Free Quote</a></div></section>
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div>
+          <div class="eyebrow">CONTACT US</div><h2>Your next clean <span class="accent">starts here.</span></h2>
+          <p>Contact our team about residential, commercial and post-construction cleaning.</p>
+          <div class="contact-detail"><small>PHONE</small><a href="tel:+12233614467">(223) 361-4467</a></div>
+          <div class="contact-detail"><small>EMAIL</small><a href="mailto:lorenzmaxcleaning@gmail.com">lorenzmaxcleaning@gmail.com</a></div>
+          <div class="contact-detail"><small>LOCATION</small><strong>Willow Street, Lancaster County, PA</strong></div>
+          <div class="contact-detail"><small>WHATSAPP</small><a href="https://wa.me/12233614467" target="_blank" rel="noopener noreferrer">Message Us on WhatsApp</a></div>
+        </div>
+        <div class="form-box">
+          <h3>Request a Free Estimate</h3><p>Fill out this form and we'll contact you about your cleaning needs.</p>
+          <form action="https://formspree.io/f/mldqljbz" method="POST">
+            <input type="hidden" name="_subject" value="New Lorenz Max Cleaning Quote Request">
+            <div class="form-row"><input type="text" name="name" placeholder="Full Name *" autocomplete="name" required><input type="tel" name="phone" placeholder="Phone Number *" autocomplete="tel" required></div>
+            <input type="email" name="email" placeholder="Email Address *" autocomplete="email" required>
+            <select name="service" required><option value="">Choose a Service *</option><option>Residential Cleaning</option><option>Commercial Cleaning</option><option>Deep Cleaning</option><option>Apartment Turnovers</option><option>Post-Construction Cleaning</option><option>Carpet Cleaning</option><option>Hotel Housekeeping</option><option>Move-In / Move-Out</option><option>Other</option></select>
+            <div class="form-row"><select name="frequency"><option value="">Cleaning Frequency</option><option>One-Time</option><option>Daily</option><option>Weekly</option><option>Biweekly</option><option>Monthly</option></select><input type="text" name="location" placeholder="City / Area"></div>
+            <textarea name="message" rows="5" placeholder="Tell us about your property and cleaning needs"></textarea>
+            <button class="btn" type="submit">Submit Quote Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer-grid">
+      <div><img class="footer-logo" src="https://raw.githubusercontent.com/lorenzmaxcleaning/lorenzmaxcleaning-site/main/logo_transparent.png" alt="Lorenz Max Cleaning official logo" loading="lazy"><h3>LORENZ MAX CLEANING LLC</h3><p>Commercial, residential and post-construction cleaning in Lancaster County, PA.</p><p>We clean and protect.</p></div>
+      <div><h3>Explore</h3><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#work">Our Work</a><a href="#reviews">Reviews</a></div>
+      <div><h3>Contact</h3><a href="tel:+12233614467">(223) 361-4467</a><a href="mailto:lorenzmaxcleaning@gmail.com">Email Us</a><a href="#contact">Free Estimate</a><a href="https://wa.me/12233614467" target="_blank" rel="noopener noreferrer">WhatsApp</a></div>
+    </div>
+    <div class="container copyright">© <span id="year">2026</span> Lorenz Max Cleaning LLC. All Rights Reserved.</div>
+  </footer>
+  <a class="whatsapp" href="https://wa.me/12233614467" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">WhatsApp</a>
+  <dialog id="lightbox" aria-label="Cleaning project photograph"><button class="close-photo" id="closePhoto" type="button" aria-label="Close photograph">×</button><img id="largePhoto" alt="Expanded cleaning project photo"></dialog>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuButton = document.getElementById('menuButton');
+    const navMenu = document.getElementById('navMenu');
+    menuButton.addEventListener('click', () => { const open = navMenu.classList.toggle('open'); menuButton.setAttribute('aria-expanded', String(open)); });
+    navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { navMenu.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); }));
+    const base = 'https://raw.githubusercontent.com/lorenzmaxcleaning/lorenzmaxcleaning-site/main/';
+    const photos = ['clean.gpt.jpeg','clean1.gpt.jpeg','clean3.gpt.jpeg','clean4.gpt.jpeg','clean5.gpt.jpeg','clean6.gpt.jpeg','clean7.gpt.jpeg','clean.gpt (2).jpeg'];
+    const gallery = document.getElementById('gallery');
+    const lightbox = document.getElementById('lightbox');
+    const largePhoto = document.getElementById('largePhoto');
+    photos.forEach((file, index) => {
+      const photoUrl = base + encodeURIComponent(file);
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.setAttribute('aria-label', 'View cleaning project photo ' + (index + 1));
+      const img = document.createElement('img');
+      img.src = photoUrl; img.alt = 'Lorenz Max Cleaning project ' + (index + 1); img.loading = 'lazy';
+      button.appendChild(img);
+      button.addEventListener('click', () => { largePhoto.src = photoUrl; if (typeof lightbox.showModal === 'function') lightbox.showModal(); else window.open(photoUrl, '_blank', 'noopener'); });
+      gallery.appendChild(button);
+    });
+    document.getElementById('closePhoto').addEventListener('click', () => lightbox.close());
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.close(); });
+  </script>
 </body>
 </html>
 
