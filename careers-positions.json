@@ -1,0 +1,19 @@
+{
+  "positions": [
+    {
+      "title": "Housekeeping",
+      "title_es": "Limpieza de hoteles",
+      "active": true
+    },
+    {
+      "title": "Residential Cleaning",
+      "title_es": "Limpieza residencial",
+      "active": true
+    },
+    {
+      "title": "Commercial Cleaning",
+      "title_es": "Limpieza comercial",
+      "active": true
+    }
+  ]
+}
